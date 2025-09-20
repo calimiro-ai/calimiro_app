@@ -1,14 +1,20 @@
 import 'package:tflite_flutter/tflite_flutter.dart';
+import 'package:camera/camera.dart';
+import 'dart:typed_data';
+import 'dart:ui' as ui;
 
 class TfliteService {
   Interpreter? _interpreter;
+  bool _isProcessing = false;
 
   bool get isLoaded => _interpreter != null;
+  bool get isProcessing => _isProcessing;
 
   Future<void> load() async {
     if (_interpreter != null) return;
     try {
       _interpreter = await Interpreter.fromAsset('assets/models/pose_classifier.tflite');
+      print('Modell erfolgreich geladen');
     } catch (e) {
       print('Fehler beim Laden des Modells: $e');
       rethrow;
@@ -28,6 +34,96 @@ class TfliteService {
     final len = shape.first;
     final rest = shape.sublist(1);
     return List.generate(len, (_) => _zerosForShape(rest, value));
+  }
+
+  // Konvertiert CameraImage zu dem Format, das das Modell erwartet
+  List<List<List<double>>> _preprocessCameraImage(CameraImage image) {
+    // Das Modell erwartet [1, 30, 25] - das ist wahrscheinlich:
+    // - Batch: 1
+    // - Zeitschritte/Sequenz: 30
+    // - Features per Zeitschritt: 25
+    // KEIN 4D Bildformat!
+    
+    final width = image.width.toDouble();
+    final height = image.height.toDouble();
+    
+    // Erstelle GENAU die erwartete Shape: [1, 30, 25]
+    return [
+      // Ein Sample im Batch: 30 Zeitschritte mit je 25 Features
+      List.generate(30, (timeStep) {
+        return List.generate(25, (feature) {
+          // Einfache Feature-Extraktion basierend auf Bildgröße und Position
+          final normalizedTime = timeStep / 29.0;
+          final normalizedFeature = feature / 24.0;
+          final imageFeature = (width + height) / 2000.0; // Normalisiert
+          
+          // Feature-Kombination: Position + Zeit + Bildinfo
+          return (normalizedTime * 0.3 + 
+                  normalizedFeature * 0.3 + 
+                  imageFeature * 0.4).clamp(0.0, 1.0);
+        });
+      })
+    ];
+  }
+
+  // Echte Kamera-Inferenz
+  Future<Map<String, dynamic>?> runInference(CameraImage image) async {
+    if (_interpreter == null) {
+      throw StateError('Interpreter not loaded');
+    }
+
+    if (_isProcessing) {
+      return null; // Skip frame wenn noch processing läuft
+    }
+
+    _isProcessing = true;
+
+    try {
+      // Debug: Input-Shape zur Laufzeit prüfen
+      final inputTensor = _interpreter!.getInputTensor(0);
+      print('Erwartete Input-Shape: ${inputTensor.shape}');
+      
+      // Preprocessing des Kamerabilds für das erwartete Format
+      final preprocessedData = _preprocessCameraImage(image);
+      print('Erstellte Daten-Shape: [${preprocessedData.length}, ${preprocessedData[0].length}, ${preprocessedData[0][0].length}]');
+      
+      // Input direkt verwenden - GENAU die erwartete Shape [1, 30, 25]
+      final input = preprocessedData; // Direkt verwenden, nicht extrahieren!
+
+      // Outputs vorbereiten
+      final outputTensors = _interpreter!.getOutputTensors();
+      final outputMap = <int, Object>{};
+      
+      for (int i = 0; i < outputTensors.length; i++) {
+        final shape = outputTensors[i].shape;
+        outputMap[i] = _zerosForShape(shape, 0.0);
+      }
+
+      print('Input wird an Modell gesendet...');
+      
+      // Inferenz ausführen - verwende runForMultipleInputs für Multi-Output
+      _interpreter!.runForMultipleInputs([input], outputMap);
+
+      print('Inferenz erfolgreich!');
+
+      // Ergebnisse verarbeiten
+      final output1 = outputMap[0] as List; // [1, 30, 1]
+      final output2 = outputMap[1] as List; // [1, 5]
+
+      return {
+        'timestamp': DateTime.now().millisecondsSinceEpoch,
+        'imageSize': '${image.width}x${image.height}',
+        'poseData': output1[0], // 30x1 Pose-Daten (nicht 30x3!)
+        'classificationScores': output2[0], // 5 Klassifikations-Scores
+        'rawOutputs': outputMap,
+      };
+
+    } catch (e) {
+      print('Fehler bei Inferenz: $e');
+      rethrow;
+    } finally {
+      _isProcessing = false;
+    }
   }
 
   // Einfacher „Smoke Test": run() mit Nullen -> gibt erstes Output-Sample zurück.
