@@ -282,8 +282,8 @@ class _WorkoutPageState extends State<WorkoutPage> {
           setState(() {
             _lastOutput = 'Keine Pose erkannt...\n\n'
                          'Pose Detection Status:\n'
-                         '✓ Erfolg: $_poseDetectionSuccessCount\n'
-                         '✗ Fehler: $_poseDetectionFailureCount\n\n'
+                         'Erfolg: $_poseDetectionSuccessCount\n'
+                         'Fehler: $_poseDetectionFailureCount\n\n'
                          'Tipps:\n'
                          '• Stellen Sie sicher, dass Sie vollständig im Bild sind\n'
                          '• Sorgen Sie für gute Beleuchtung\n'
@@ -331,7 +331,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
     output.writeln('Erkannte Übung: ${analysisResult['exercise']}');
     output.writeln('Konfidenz: ${(analysisResult['confidence'] * 100).toStringAsFixed(1)}%');
     output.writeln('Wiederholungen: ${analysisResult['reps']}');
-    output.writeln('Status: ${analysisResult['inMovement'] ? "🏃 In Bewegung" : "⏸ Ruhend"}');
+    output.writeln('Status: ${analysisResult['inMovement'] ? "In Bewegung" : "⏸ Ruhend"}');
     output.writeln('Grund: ${analysisResult['reason']}');
     
     // 2. Alle Übungsscores
@@ -343,7 +343,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
       
       for (final entry in sortedEntries) {
         final score = entry.value * 100;
-        final marker = entry.key == analysisResult['exercise'] ? '🏆' : '  ';
+        final marker = entry.key == analysisResult['exercise'] ? '' : '  ';
         output.writeln('$marker ${entry.key}: ${score.toStringAsFixed(1)}%');
       }
     }
@@ -532,7 +532,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
           debug.writeln('TensorFlow Status: ⚠ Fehler beim Laden: $e');
         }
       } else {
-        debug.writeln('TensorFlow Status: ❌ Nicht geladen (optional)');
+        debug.writeln('TensorFlow Status: Nicht geladen (optional)');
       }
       
       debug.writeln('\n=== SYSTEM-EMPFEHLUNGEN ===');
@@ -742,7 +742,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
                 child: _buildPrimaryButton(
                   onPressed: ready && !_isLiveAnalysisRunning ? _startLiveAnalysis : null,
                   icon: Icons.play_arrow_rounded,
-                  label: 'MediaPipe Start',
+                  label: 'Start',
                   isPrimary: true,
                 ),
               ),
@@ -763,13 +763,6 @@ class _WorkoutPageState extends State<WorkoutPage> {
           // Sekundäre Steuerung
           Row(
             children: [
-              Expanded(
-                child: _buildSecondaryButton(
-                  onPressed: ready && _isLiveAnalysisRunning ? _resetReps : null,
-                  icon: Icons.refresh_rounded,
-                  label: 'Reps Reset',
-                ),
-              ),
               const SizedBox(width: 8),
               Expanded(
                 child: _buildSecondaryButton(
