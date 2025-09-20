@@ -7,7 +7,7 @@ class TfliteService {
 
   Future<void> load() async {
     if (_interpreter != null) return;
-    _interpreter = await Interpreter.fromAsset('lib/assets/models/pose_classifier.tflite');
+    _interpreter = await Interpreter.fromAsset('assets/models/pose_classifier.tflite');
   }
 
   void close() {
