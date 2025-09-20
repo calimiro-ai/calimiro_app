@@ -2,9 +2,450 @@ C:\calimiro_app
 ├── .dart_tool
 │   ├── dartpad
 │   │   └── web_plugin_registrant.dart
+│   ├── flutter_build
+│   │   ├── 7afe4ff1358bafb740da437578332e9f
+│   │   │   ├── .filecache
+│   │   │   ├── app.dill
+│   │   │   ├── debug_android_application.stamp
+│   │   │   ├── flutter_assets.d
+│   │   │   ├── gen_dart_plugin_registrant.stamp
+│   │   │   ├── gen_localizations.stamp
+│   │   │   ├── kernel_snapshot.stamp
+│   │   │   ├── kernel_snapshot_native_assets.stamp
+│   │   │   ├── kernel_snapshot_program.d
+│   │   │   ├── kernel_snapshot_program.stamp
+│   │   │   ├── native_assets.d
+│   │   │   ├── native_assets.dill
+│   │   │   ├── native_assets.stamp
+│   │   │   ├── native_assets.yaml
+│   │   │   ├── outputs.json
+│   │   │   └── program.dill
+│   │   └── dart_plugin_registrant.dart
 │   ├── package_config.json
 │   ├── package_config_subset
 │   └── version
+├── .git
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── refs
+│   │   │   ├── heads
+│   │   │   │   └── main
+│   │   │   └── remotes
+│   │   │       └── origin
+│   │   │           └── main
+│   │   └── HEAD
+│   ├── objects
+│   │   ├── 01
+│   │   │   ├── 6e4124f49934af15cc1eabaa3a450f9b0f7781
+│   │   │   └── b2956661a9434edc4a33f96118d8bb24c50fc2
+│   │   ├── 03
+│   │   │   └── a8241ddac6d65b49e0dbf2a75db9b495e7e7a2
+│   │   ├── 04
+│   │   │   └── 67bf12aa4d28f374bb26596605a46dcbb3e7c8
+│   │   ├── 06
+│   │   │   └── 952be745f9fa6fa75196e830d9578eb2ee631d
+│   │   ├── 08
+│   │   │   └── 96058469495c17f73c1d8f6decbc4e41754435
+│   │   ├── 09
+│   │   │   └── d4391482be68e9e4a07fab769b5de337d16eb1
+│   │   ├── 0a
+│   │   │   ├── 2fa2a7039be8db5e0e505bd278dfded1f84cee
+│   │   │   └── 3f5fa40fb3d1e0710331a48de5d256da3f275d
+│   │   ├── 0b
+│   │   │   └── edcf2fd46788ae3a01a423467513ff59b5c120
+│   │   ├── 0d
+│   │   │   └── 2902135caece481a035652d88970c80e29cc7e
+│   │   ├── 0e
+│   │   │   └── c303439225b78712f49115768196d8d76f6790
+│   │   ├── 10
+│   │   │   └── ccf0916eb8ab0e538319be71676ef2cbd9673d
+│   │   ├── 12
+│   │   │   ├── 46f89868b096ada596147af478781147d8984d
+│   │   │   └── adcf3497ef8c5f9c1b21c5f69a42f2a24a3bb7
+│   │   ├── 13
+│   │   │   └── b35eba55c6dabc3aac36f33d859266c18fa0d0
+│   │   ├── 14
+│   │   │   └── 8da3098986ea6c098d5a7b1f8e9cbf6b427b56
+│   │   ├── 15
+│   │   │   └── 3653e8d67f81b901d28257a65908f3278e058d
+│   │   ├── 16
+│   │   │   └── 84cb317974054836497bc8175394f520b5ed2c
+│   │   ├── 17
+│   │   │   ├── 3ed5c696aba903a0499910ebf383c9c5608c4f
+│   │   │   ├── 5dd926dc754ff6685cfc132cb9a07c0c132de5
+│   │   │   ├── 987b79bb8a35cc66c3c1fd44f5a5526c1b78be
+│   │   │   └── e9516a74074fad22bac3e52e39131886697622
+│   │   ├── 18
+│   │   │   └── d981003d68d0546c4804ac2ff47dd97c6e7921
+│   │   ├── 1a
+│   │   │   └── fa75d5671499834c6daff90a79a8ec311c989f
+│   │   ├── 1c
+│   │   │   ├── 29b4fc2673ccbb918730c4d3a1f0d51663c591
+│   │   │   └── 4cfdd96a89b0095dbd29a6ca194e41ad77b4fd
+│   │   ├── 1d
+│   │   │   └── 526a16ed0f1cd0c2409d848bf489b93fefa3b2
+│   │   ├── 1f
+│   │   │   └── 0571cd1bb608349d15a48ca203ed49269e4e3a
+│   │   ├── 21
+│   │   │   └── 43a105539eeb02d80fdc46eaedec260fb9af56
+│   │   ├── 22
+│   │   │   └── c4462b79288fe10768cc571a36732ce5726025
+│   │   ├── 24
+│   │   │   └── c96b548420229deca1fbf8253474fdaf177a86
+│   │   ├── 25
+│   │   │   ├── 42ea5917aca23073b565df46bf2b44357d80ab
+│   │   │   └── 97170821647d2bd8b150d973a35d27c99a5f44
+│   │   ├── 27
+│   │   │   └── bed1b48e74ad9890241ea5b9686f1f0a410e6e
+│   │   ├── 29
+│   │   │   ├── a3a5017f048d6d8e6a450eef64435ddee44fb7
+│   │   │   └── df181096ea0120d304c179ac8fbe8737eb9b9c
+│   │   ├── 2b
+│   │   │   └── b0105f64e9b7b0cc675b3aad922c69a9bdfea9
+│   │   ├── 2e
+│   │   │   └── 1de87a7eb61e17463f7406106f6c413533cecf
+│   │   ├── 2f
+│   │   │   └── 1632cfddf3d9dade342351e627a0a75609fb46
+│   │   ├── 30
+│   │   │   ├── 4732f8842013497e14bd02f67a55f2614fb8f7
+│   │   │   ├── 8a2a560b42f17aaf3c36e4e9c8cd07182fbb7e
+│   │   │   └── d2d471c6b9bef248026577c9744c00880bfd41
+│   │   ├── 32
+│   │   │   ├── 1773cd857a8a0f0c9c7d3dc3f5ff4fb298dc10
+│   │   │   └── 6c0e72c9d820600887813b3b98d0dd69c5d4e8
+│   │   ├── 34
+│   │   │   └── 7139c48727d4f32a2b9bac862fb4793356cc63
+│   │   ├── 35
+│   │   │   └── 9ce533ca8dd192422279bf6dee2425cfa5d2f5
+│   │   ├── 36
+│   │   │   ├── b0fd9464f45b33f482e64bea579787e142affa
+│   │   │   ├── b3c117493be1c281bb1072e04a555059732bcf
+│   │   │   └── cbce676bcfbddfa689b9d0abf23ac40fd2e60b
+│   │   ├── 38
+│   │   │   └── 79d54755798567f0f318d63340508d5668eb96
+│   │   ├── 39
+│   │   │   ├── 4917c053a04daa76d8b94f0a02db0bd99e1034
+│   │   │   └── 9f6981d5d35475eb18e6068ae67cdd7c731978
+│   │   ├── 3a
+│   │   │   ├── 0b46511a71b464dac72d693faae6ea0f7e3b2e
+│   │   │   ├── a9ab18680d1521d7fa89fd56498bcb478e9178
+│   │   │   └── f93b882364ddc13fefa4826038d2c851bf5ea1
+│   │   ├── 3b
+│   │   │   └── 44414dca5a1b1dc9f940f0f1c7ee25e460152e
+│   │   ├── 3c
+│   │   │   ├── 597679a4a2ed824801d79e6fedfd9c91a8753c
+│   │   │   ├── 85cfe057a1a9dd11fe5c2da1477816fd9a1ff5
+│   │   │   └── c05eb23491684aae1c51ce94668a142bad5125
+│   │   ├── 3d
+│   │   │   └── f3d1a91dec9f419bbf32c7dbd7ffe3049577b7
+│   │   ├── 3e
+│   │   │   └── 93413b1348f80307d986c7d9d2c3ff755ff610
+│   │   ├── 41
+│   │   │   └── dffd916c819ce639f0636e55bb4082214acca3
+│   │   ├── 42
+│   │   │   └── bcbf4780b187e80025b7917058bcb882012aa1
+│   │   ├── 43
+│   │   │   └── 8ece5faecb9845f414c93e3bfff414280d9c1f
+│   │   ├── 46
+│   │   │   └── b726bd53d47e61ba941eb355b9c8633ebbaa20
+│   │   ├── 47
+│   │   │   └── 89daa6a443eefa7f3f729164a18351e06e9800
+│   │   ├── 48
+│   │   │   └── de52bffad9b08b90558e5c760d9f7694d030d2
+│   │   ├── 4b
+│   │   │   └── f3c1f6f318c6ef1791782ba38a39d1aa3f9873
+│   │   ├── 4c
+│   │   │   ├── 122634e22d4f136ec694a805d8722e7254c83e
+│   │   │   ├── d7b0099ca80c806f8fe495613e8d6c69460d76
+│   │   │   └── fcd01e672e8eb71cfb232254cdca108cad1d88
+│   │   ├── 4d
+│   │   │   └── 6372eebdb28e45604e46eeda8dd24651419bc0
+│   │   ├── 50
+│   │   │   └── 2f463a9bc882b461c96aadf492d1729e49e725
+│   │   ├── 55
+│   │   │   ├── 62dafc44202e873ca9aa2b9c0f1e1904432c1d
+│   │   │   ├── afd919c6591c63bfcfda8a5ce8a60acc7666ca
+│   │   │   └── eb5eb477a87e67d5c46ba4c305dfa593d3da76
+│   │   ├── 58
+│   │   │   └── 1d60143251682f705f408f8548ccdc410ff9fc
+│   │   ├── 59
+│   │   │   └── 2ceee85b89bd111b779db6116b130509ab6d4b
+│   │   ├── 5a
+│   │   │   └── 88276a7b36980d2efa2689a410aebb67aa65b8
+│   │   ├── 5e
+│   │   │   └── 38e316a08397496f3b1c453921adb377a3bf1e
+│   │   ├── 60
+│   │   │   └── 608d0fe5bff3a7a7e05d5a232944a1a8effe5f
+│   │   ├── 61
+│   │   │   ├── 49f5081b8c6822375f519e792d87c471dad364
+│   │   │   └── f3bd1fc504c3b78271416d8cfd14faa1dae2b4
+│   │   ├── 62
+│   │   │   └── 6664468b8914efda0addf1322b12b8c0071710
+│   │   ├── 63
+│   │   │   └── 2d2b2d22cecb11f32745c644c827ecf75669ff
+│   │   ├── 64
+│   │   │   └── 1eed1576ce92556f461cc8a4b11707179a153b
+│   │   ├── 66
+│   │   │   ├── 958f73020afe5cf7cbc947b3ba8a3e1f972a8f
+│   │   │   └── a65d1e4a79f230031ec0e0959a721039e7282f
+│   │   ├── 67
+│   │   │   └── 30acb815212a3ff8a42caa6d500147ae7c19bc
+│   │   ├── 69
+│   │   │   └── 0dbba97f29a0d912cb5f24e1591c2883d489da
+│   │   ├── 6c
+│   │   │   ├── 40b9e4e72efb70e12af416fa85015baa53212f
+│   │   │   └── 8e736c9131cbed40246aad6c478f4be38fbd3f
+│   │   ├── 6d
+│   │   │   └── a0652f05f28fc6950cec20ebdfbae89b665479
+│   │   ├── 6e
+│   │   │   └── d2d933e1120817fe9182483a228007b18ab6ae
+│   │   ├── 6f
+│   │   │   ├── 8259cb03c9ca5d03c6024939eeb3b6d6f1badf
+│   │   │   └── 96449f8a7c83fc4a35e9e94a5cc1a8e04e0da4
+│   │   ├── 72
+│   │   │   └── 271d5e41701cfbffad74d38640bf9cc7c1f7be
+│   │   ├── 73
+│   │   │   └── 53c41ecf9ca08017312dc233d9830079b50717
+│   │   ├── 74
+│   │   │   └── 6adbb6b9e14b7e685c91e280a4d37a672afbd8
+│   │   ├── 75
+│   │   │   └── 4fe43a6873581c66349d7489c6d06cb3573106
+│   │   ├── 76
+│   │   │   └── e1789b06850f063df87b763f25be27996e1488
+│   │   ├── 77
+│   │   │   └── 681f469c9b9a74f4b9c2acb5e4a76be617e44b
+│   │   ├── 79
+│   │   │   └── 7d452e458972bab9d994556c8305db4c827017
+│   │   ├── 7a
+│   │   │   └── 7f9873ad7dceb4dc17087fb06c800fa0191376
+│   │   ├── 7b
+│   │   │   └── b2df6ba6ea53ebbee820728a3eef274ddd71bd
+│   │   ├── 7c
+│   │   │   └── 56964006274498b0edaa77763cdd72c6d42b6a
+│   │   ├── 7f
+│   │   │   └── 8775d0d2800f4d71227dcc4d6e6b0de432e119
+│   │   ├── 80
+│   │   │   ├── 82895bd0ab203524ba4389b3b1ad270a298f25
+│   │   │   └── e867a4e06b4dc26d0a2b327cbd54041addc50a
+│   │   ├── 82
+│   │   │   └── b6f9d9a33e198f5747104729e1fcef999772a5
+│   │   ├── 83
+│   │   │   └── 36f4c3c3696f498b06e8b0f5e01889c68c388b
+│   │   ├── 84
+│   │   │   └── ac32ae7d989f82d5e46a60405adcc8279e8001
+│   │   ├── 85
+│   │   │   ├── 2fa1a4728ae4789e3bca55dd07caef3b41f2a5
+│   │   │   └── 79fcce20218969ca8431a822af2b99eeff1113
+│   │   ├── 86
+│   │   │   └── a7c3b1b6119f7dbdb8cec74f1b5b3e076bf949
+│   │   ├── 88
+│   │   │   └── cfd48dff1169879ba46840804b412fe02fefd6
+│   │   ├── 89
+│   │   │   ├── 53cba09064923c5daf2d37e7c3c836ccdd794b
+│   │   │   ├── 56f5a4bf46ab377d28b178a81ef2d9c25fb700
+│   │   │   └── c2725b70f1882be97f5214fafe22d27a0ec01e
+│   │   ├── 8a
+│   │   │   ├── aa46ac1ae21512746f852a42ba87e4165dfdd1
+│   │   │   └── f96a2c8ade099adb3fca57791d512ff901fc4a
+│   │   ├── 8b
+│   │   │   ├── 6d4680af388f28db8742ef7fb8246e2bb1fffb
+│   │   │   └── d06bdf095c809f80d639847440b06b0199a88c
+│   │   ├── 8d
+│   │   │   ├── ebd6ca07816742a92b01971f0bba1cfe2ae4ac
+│   │   │   └── eeb716ebb8ea66d4f7bc107ce1fe6635d52314
+│   │   ├── 8e
+│   │   │   ├── 02df288835694650d8c57a5fffefcd8d7ff93f
+│   │   │   ├── 3ca5dfe1936519e96475be8d0b5ff5faa43727
+│   │   │   └── 940891213b854cceb67cedbdf7639ce76192a3
+│   │   ├── 90
+│   │   │   └── 3f4899d6fced0eb941e159f7322b21b320c40c
+│   │   ├── 91
+│   │   │   └── 9434a6254f0e9651f402737811be6634a03e9c
+│   │   ├── 92
+│   │   │   └── e4772c010489672a256d31a170597fd4e77bf4
+│   │   ├── 95
+│   │   │   └── 5ee3038f988929fac2dedb6a307ebd45dfcfd7
+│   │   ├── 97
+│   │   │   └── 88e188da821bb7860d346a2749e1b83f71762d
+│   │   ├── 98
+│   │   │   └── 2ea312b1ac2ead9fbc0bfc686d680b4d39a28f
+│   │   ├── 9a
+│   │   │   └── e34a406c33b0f6d67529c41321876170c25b57
+│   │   ├── 9d
+│   │   │   └── a19eacad3b03bb08bbddbbf4ac48dd78b3d838
+│   │   ├── a2
+│   │   │   └── ec33f19f110ebff51a23342d7bc29ec9a1aaa6
+│   │   ├── a5
+│   │   │   ├── 242efbdf0580d91d27d931982f430465f716d0
+│   │   │   └── 74fb9e3907608e950927d928b60aed4a83795a
+│   │   ├── a6
+│   │   │   └── 368af0ee7628fa194ef8fe3bbe4523113d6e05
+│   │   ├── a8
+│   │   │   ├── 7eef84a5d29844f41176f808a797cea593616b
+│   │   │   └── e64fdfeb26c1371bc1169043e31175cea36ef3
+│   │   ├── ad
+│   │   │   └── 03caeaaf479c30ec1d622c4748bc9d2d6c1128
+│   │   ├── b0
+│   │   │   ├── b62cf22a4800738a903ab6bc07164c9d905207
+│   │   │   └── c108915ce15fda5c50ca5b4ede9640c817f9d4
+│   │   ├── b1
+│   │   │   └── 0f3001a212b364ce243f8b80c7da450928d777
+│   │   ├── b7
+│   │   │   ├── 49bfef07473333cf1dd31e9eed89862a5d52aa
+│   │   │   └── ad1fa7488a13d5f0a4fb2b528f03ddf586f75c
+│   │   ├── b8
+│   │   │   └── 570398224e773edf4f8ca0da6725c6e553eb05
+│   │   ├── b9
+│   │   │   ├── 2a0d854da9a8f73216c4a0ef07a0f0a44e4373
+│   │   │   ├── 3c4c30c16703f640bc38523e56204ade09399e
+│   │   │   └── e43bd37614c4e28ab1d41c3d6a262832ce26e4
+│   │   ├── ba
+│   │   │   ├── 4064f90119354e5888986c10a2e18ec251ffa5
+│   │   │   ├── 4322da8beb182637e83f7e3c966dd41f095cfb
+│   │   │   └── f3d77f76706dbc82162dd6bc9a1365ac5be830
+│   │   ├── bc
+│   │   │   └── 80a6894ccbce60c72fe2ca32d0108ad9d4f50e
+│   │   ├── bd
+│   │   │   └── b57226d5f2bd20f11934f4903f16459cf52379
+│   │   ├── be
+│   │   │   └── 11fe52f491832e63f0b548b8be28342c4aa0d4
+│   │   ├── c0
+│   │   │   ├── 4e20caf6370ebb9253ad831cc31de4a9c965f6
+│   │   │   └── e6bf8177ecabfb096352ba70a5f7ac34be3f95
+│   │   ├── c1
+│   │   │   └── 1dcb5bbe2ee193605b19689c58ff636ff4d5f5
+│   │   ├── c2
+│   │   │   └── efd0b608ba84712fb3e1d01122468a50c7fba1
+│   │   ├── c4
+│   │   │   ├── 1de64d406e41ccf7ead75ced9608c9c128024c
+│   │   │   └── 3cc9b8ba4e4ae5c6df5ed5e3f199668b7fead0
+│   │   ├── c5
+│   │   │   └── 1a04d3d0baf74177f5b13de4203ba130199557
+│   │   ├── c7
+│   │   │   └── e9c584c7d12e8147e1f0f1c9c4477c686bf233
+│   │   ├── c9
+│   │   │   └── b6b16b39d36b0e8c7f7512c1741390e67f0ca8
+│   │   ├── ca
+│   │   │   └── cfdd8f63c67d1f08e17dacb7ceadf18376d294
+│   │   ├── cb
+│   │   │   ├── 1ef88056edd1caf99a935e434e7ff6943a0ef6
+│   │   │   ├── 326583405e651d0d7401d11a8b3549ae57ed6d
+│   │   │   └── b6965e9fefe85ad7d975d329d93c3e28fcb139
+│   │   ├── cc
+│   │   │   └── cf817a52206e8a8eef501faed292993ff21a31
+│   │   ├── ce
+│   │   │   └── 840d1943839e5101d9a40663930c3fbbf320fd
+│   │   ├── cf
+│   │   │   └── 3f2cbed95255fcc9ba3cb2cb4a153894f738b6
+│   │   ├── d0
+│   │   │   ├── 44da85245f583954a96bee75a1f23e9b5ce1ae
+│   │   │   └── 651fda5fbc1e0e728fe38d2abc65f7250c177d
+│   │   ├── d2
+│   │   │   ├── fb95e74a73ebad4c85a4881475b3760e51fbe1
+│   │   │   └── ffbffa4cd251cc00b2b93a5efc2a0213460220
+│   │   ├── d3
+│   │   │   ├── 6b1fab2d9dea668a4f83df94d525897d9e68dd
+│   │   │   ├── 896c98444fbe7288d434169a28c532258a4466
+│   │   │   └── b9e0aafa70e7b518de6d7f36503def555e3867
+│   │   ├── d4
+│   │   │   └── 92d0d98c8fdc9f93ad2543bb4f531803e9df72
+│   │   ├── d5
+│   │   │   ├── bd01648a96d50136b2a97c8bb9aa5b711f6c39
+│   │   │   └── f1c8d34e7a88e3f88bea192c3a370d44689c3c
+│   │   ├── d6
+│   │   │   └── 9c56691fbdb0b7efa65097c7cc1edac12a6d3e
+│   │   ├── d7
+│   │   │   └── 61c53178cc135119f252e047fb2f6e08512ed0
+│   │   ├── d8
+│   │   │   └── 54e124cd6028e111cf3e0eba86200f7557613a
+│   │   ├── da
+│   │   │   └── 8cb85301fcf6d0b65a58ae13fb92575616ad16
+│   │   ├── db
+│   │   │   ├── 77bb4b7b0906d62b1847e87f15cdcacf6a4f29
+│   │   │   └── ff1aeeeb42527377587c63ac7407b05f7d5425
+│   │   ├── dc
+│   │   │   ├── 139d85a93101cc0f6e9db03a3e1a9f68e8dd7e
+│   │   │   ├── 9ada4725e9b0ddb1deab583e5b5102493aa332
+│   │   │   └── fc2b3f449d76d6842fe4dee2f7a247c812d762
+│   │   ├── dd
+│   │   │   ├── 58ccfe64dff2e0871c3c8a96031affcb13d1fe
+│   │   │   └── db8a30c851e7ef5b16a9108934bd1217b6b43f
+│   │   ├── df
+│   │   │   └── f4f49561c816f70eaea557d889d31cf63447ac
+│   │   ├── e0
+│   │   │   ├── 73d6f35c7823f7f9225066ca8f9d2d007ca6e0
+│   │   │   └── f0a47bc08f30b550b47b01de4c9206b6824dd9
+│   │   ├── e3
+│   │   │   └── 3142e71bfc751ce1d7a7d46406235425786005
+│   │   ├── e7
+│   │   │   ├── 1a16d23d05881b554326e645083799ab9bfc5e
+│   │   │   ├── 585ce076ee1ff62453ccb55d54ba2b95762948
+│   │   │   ├── 6a3bc05aa1dac65253643de35ff6243a3bfb37
+│   │   │   └── c5c54370372a4cdde7288a32733998d87bd767
+│   │   ├── e9
+│   │   │   ├── 01dde684ea8ba25c50ea5dc7d5900da31a30d4
+│   │   │   └── f5fea27c705180eb716271f41b582e76dcbd90
+│   │   ├── eb
+│   │   │   └── 9b4d76e525556d5d89141648c724331630325d
+│   │   ├── ee
+│   │   │   └── 9be75ec4ebbcf8f7ec512e42e5a1c173e72f5e
+│   │   ├── f0
+│   │   │   ├── 83318e09ca1b6b8484b1694a149f0c5d5cac1d
+│   │   │   └── ab84b6d3a8f362d6b5aafa466688e4063529ca
+│   │   ├── f1
+│   │   │   ├── 543a3ca2aca2a452f1a18a7ddf46f56bc5bc4a
+│   │   │   └── 7a84fb586565e51d49bf25b25135db18770719
+│   │   ├── f2
+│   │   │   └── e259c7c9390ff69a6bbe1e0907e6dc366848e7
+│   │   ├── f3
+│   │   │   ├── 2387c7da1516188fe9e7238c0d4758028e1e19
+│   │   │   ├── 46021e5e353f2f827b3a136a02d0f53631c785
+│   │   │   └── c28516fb38e64d88cfcf5fb1791175df078f2f
+│   │   ├── f4
+│   │   │   └── f6dbdbfcfdc9ea12d45197049e9dabcf6850e3
+│   │   ├── f5
+│   │   │   ├── 7ad8711318d9631ecbb23a2a0c38e14af04d07
+│   │   │   └── 8bb76100e82ec653e9b32a02d18d9232922d51
+│   │   ├── f7
+│   │   │   └── 4085f3f6a2b995f8ad1f9ff7b2c46dc118a9e0
+│   │   ├── f9
+│   │   │   ├── 48d43850d4f99b99ab4ed0c333c0ef190b6602
+│   │   │   ├── 758a92672986757c29781aeabd6643791a3640
+│   │   │   └── b0d7c5ea15f194be85eb6ee8e6721a87ff4644
+│   │   ├── fe
+│   │   │   └── 730945a01f64a61e2235dbe3f45b08f7729182
+│   │   ├── info
+│   │   └── pack
+│   ├── refs
+│   │   ├── heads
+│   │   │   └── main
+│   │   ├── remotes
+│   │   │   └── origin
+│   │   │       └── main
+│   │   └── tags
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── index
+│   └── ORIG_HEAD
 ├── .idea
 │   ├── libraries
 │   │   ├── Dart_SDK.xml
@@ -14,6 +455,37 @@ C:\calimiro_app
 │   ├── modules.xml
 │   └── workspace.xml
 ├── android
+│   ├── .gradle
+│   │   ├── 8.7
+│   │   │   ├── checksums
+│   │   │   │   ├── checksums.lock
+│   │   │   │   └── sha1-checksums.bin
+│   │   │   ├── dependencies-accessors
+│   │   │   │   └── gc.properties
+│   │   │   ├── executionHistory
+│   │   │   │   ├── executionHistory.bin
+│   │   │   │   └── executionHistory.lock
+│   │   │   ├── expanded
+│   │   │   ├── fileChanges
+│   │   │   │   └── last-build.bin
+│   │   │   ├── fileHashes
+│   │   │   │   ├── fileHashes.bin
+│   │   │   │   ├── fileHashes.lock
+│   │   │   │   └── resourceHashesCache.bin
+│   │   │   ├── vcsMetadata
+│   │   │   └── gc.properties
+│   │   ├── buildOutputCleanup
+│   │   │   ├── buildOutputCleanup.lock
+│   │   │   ├── cache.properties
+│   │   │   └── outputFiles.bin
+│   │   ├── kotlin
+│   │   │   ├── errors
+│   │   │   └── sessions
+│   │   ├── noVersion
+│   │   │   └── buildLogic.lock
+│   │   ├── vcs-1
+│   │   │   └── gc.properties
+│   │   └── file-system.probe
 │   ├── app
 │   │   ├── src
 │   │   │   ├── debug
@@ -62,8 +534,1994 @@ C:\calimiro_app
 │   ├── gradle.properties
 │   ├── gradlew
 │   ├── gradlew.bat
+│   ├── hs_err_pid22904.log
+│   ├── hs_err_pid4724.log
+│   ├── hs_err_pid8412.log
 │   ├── local.properties
+│   ├── replay_pid8412.log
 │   └── settings.gradle
+├── assets
+│   └── models
+│       └── pose_classifier.tflite
+├── build
+│   ├── 16007c0bcccc7779b6e91d292c2abda5
+│   │   ├── _composite.stamp
+│   │   ├── gen_dart_plugin_registrant.stamp
+│   │   └── gen_localizations.stamp
+│   ├── app
+│   │   ├── generated
+│   │   │   ├── ap_generated_sources
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   └── res
+│   │   │       ├── pngs
+│   │   │       │   └── debug
+│   │   │       └── resValues
+│   │   │           └── debug
+│   │   ├── intermediates
+│   │   │   ├── aar_metadata_check
+│   │   │   │   └── debug
+│   │   │   ├── annotation_processor_list
+│   │   │   │   └── debug
+│   │   │   │       └── annotationProcessors.json
+│   │   │   ├── apk_ide_redirect_file
+│   │   │   │   └── debug
+│   │   │   │       └── redirect.txt
+│   │   │   ├── app_metadata
+│   │   │   │   └── debug
+│   │   │   │       └── app-metadata.properties
+│   │   │   ├── assets
+│   │   │   │   └── debug
+│   │   │   │       └── flutter_assets
+│   │   │   │           ├── assets
+│   │   │   │           │   └── models
+│   │   │   │           │       └── pose_classifier.tflite
+│   │   │   │           ├── fonts
+│   │   │   │           │   └── MaterialIcons-Regular.otf
+│   │   │   │           ├── lib
+│   │   │   │           │   └── assets
+│   │   │   │           │       └── models
+│   │   │   │           ├── shaders
+│   │   │   │           │   └── ink_sparkle.frag
+│   │   │   │           ├── AssetManifest.bin
+│   │   │   │           ├── AssetManifest.json
+│   │   │   │           ├── FontManifest.json
+│   │   │   │           ├── isolate_snapshot_data
+│   │   │   │           ├── kernel_blob.bin
+│   │   │   │           ├── NOTICES.Z
+│   │   │   │           └── vm_snapshot_data
+│   │   │   ├── compatible_screen_manifest
+│   │   │   │   └── debug
+│   │   │   │       └── output-metadata.json
+│   │   │   ├── compile_and_runtime_not_namespaced_r_class_jar
+│   │   │   │   └── debug
+│   │   │   │       └── R.jar
+│   │   │   ├── compressed_assets
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           └── assets
+│   │   │   │               └── flutter_assets
+│   │   │   │                   ├── assets
+│   │   │   │                   │   └── models
+│   │   │   │                   │       └── pose_classifier.tflite.jar
+│   │   │   │                   ├── fonts
+│   │   │   │                   │   └── MaterialIcons-Regular.otf.jar
+│   │   │   │                   ├── lib
+│   │   │   │                   │   └── assets
+│   │   │   │                   │       └── models
+│   │   │   │                   ├── shaders
+│   │   │   │                   │   └── ink_sparkle.frag.jar
+│   │   │   │                   ├── AssetManifest.bin.jar
+│   │   │   │                   ├── AssetManifest.json.jar
+│   │   │   │                   ├── FontManifest.json.jar
+│   │   │   │                   ├── isolate_snapshot_data.jar
+│   │   │   │                   ├── kernel_blob.bin.jar
+│   │   │   │                   ├── NOTICES.Z.jar
+│   │   │   │                   └── vm_snapshot_data.jar
+│   │   │   ├── data_binding_layout_info_type_merge
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── desugar_graph
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           ├── currentProject
+│   │   │   │           │   ├── dirs_bucket_0
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── dirs_bucket_1
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── dirs_bucket_2
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── dirs_bucket_3
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── dirs_bucket_4
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── dirs_bucket_5
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── dirs_bucket_6
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── dirs_bucket_7
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── jar_0ee7a211512ed43c27753b097fa53d95f3a4168bf6d2c27d2448ad04bc0369ce_bucket_0
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── jar_0ee7a211512ed43c27753b097fa53d95f3a4168bf6d2c27d2448ad04bc0369ce_bucket_1
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── jar_0ee7a211512ed43c27753b097fa53d95f3a4168bf6d2c27d2448ad04bc0369ce_bucket_2
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── jar_0ee7a211512ed43c27753b097fa53d95f3a4168bf6d2c27d2448ad04bc0369ce_bucket_3
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── jar_0ee7a211512ed43c27753b097fa53d95f3a4168bf6d2c27d2448ad04bc0369ce_bucket_4
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── jar_0ee7a211512ed43c27753b097fa53d95f3a4168bf6d2c27d2448ad04bc0369ce_bucket_5
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   ├── jar_0ee7a211512ed43c27753b097fa53d95f3a4168bf6d2c27d2448ad04bc0369ce_bucket_6
+│   │   │   │           │   │   └── graph.bin
+│   │   │   │           │   └── jar_0ee7a211512ed43c27753b097fa53d95f3a4168bf6d2c27d2448ad04bc0369ce_bucket_7
+│   │   │   │           │       └── graph.bin
+│   │   │   │           ├── externalLibs
+│   │   │   │           ├── mixedScopes
+│   │   │   │           └── otherProjects
+│   │   │   │               ├── jar_2656aede4ddfbcaa63d666a558900c014f25d3cd02529aa8f2dd203294f24ab5_bucket_0
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2656aede4ddfbcaa63d666a558900c014f25d3cd02529aa8f2dd203294f24ab5_bucket_1
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2656aede4ddfbcaa63d666a558900c014f25d3cd02529aa8f2dd203294f24ab5_bucket_2
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2656aede4ddfbcaa63d666a558900c014f25d3cd02529aa8f2dd203294f24ab5_bucket_3
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2656aede4ddfbcaa63d666a558900c014f25d3cd02529aa8f2dd203294f24ab5_bucket_4
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2656aede4ddfbcaa63d666a558900c014f25d3cd02529aa8f2dd203294f24ab5_bucket_5
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2656aede4ddfbcaa63d666a558900c014f25d3cd02529aa8f2dd203294f24ab5_bucket_6
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2656aede4ddfbcaa63d666a558900c014f25d3cd02529aa8f2dd203294f24ab5_bucket_7
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2cbbf6d9a125d3b4da23899160f13aac0e4a16f87b5eb5b867809c9cd6644f21_bucket_0
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2cbbf6d9a125d3b4da23899160f13aac0e4a16f87b5eb5b867809c9cd6644f21_bucket_1
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2cbbf6d9a125d3b4da23899160f13aac0e4a16f87b5eb5b867809c9cd6644f21_bucket_2
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2cbbf6d9a125d3b4da23899160f13aac0e4a16f87b5eb5b867809c9cd6644f21_bucket_3
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2cbbf6d9a125d3b4da23899160f13aac0e4a16f87b5eb5b867809c9cd6644f21_bucket_4
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2cbbf6d9a125d3b4da23899160f13aac0e4a16f87b5eb5b867809c9cd6644f21_bucket_5
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2cbbf6d9a125d3b4da23899160f13aac0e4a16f87b5eb5b867809c9cd6644f21_bucket_6
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_2cbbf6d9a125d3b4da23899160f13aac0e4a16f87b5eb5b867809c9cd6644f21_bucket_7
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_5362baa27bd4dc7ab0f9729444c8ece966e45e4e05c57bc0e4df29a875cb8b14_bucket_0
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_5362baa27bd4dc7ab0f9729444c8ece966e45e4e05c57bc0e4df29a875cb8b14_bucket_1
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_5362baa27bd4dc7ab0f9729444c8ece966e45e4e05c57bc0e4df29a875cb8b14_bucket_2
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_5362baa27bd4dc7ab0f9729444c8ece966e45e4e05c57bc0e4df29a875cb8b14_bucket_3
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_5362baa27bd4dc7ab0f9729444c8ece966e45e4e05c57bc0e4df29a875cb8b14_bucket_4
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_5362baa27bd4dc7ab0f9729444c8ece966e45e4e05c57bc0e4df29a875cb8b14_bucket_5
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_5362baa27bd4dc7ab0f9729444c8ece966e45e4e05c57bc0e4df29a875cb8b14_bucket_6
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_5362baa27bd4dc7ab0f9729444c8ece966e45e4e05c57bc0e4df29a875cb8b14_bucket_7
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_7f6bcb6a7ee4b44e07a5b5180dd02151170c435eea1d66b6e7a90eaa348389a5_bucket_0
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_7f6bcb6a7ee4b44e07a5b5180dd02151170c435eea1d66b6e7a90eaa348389a5_bucket_1
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_7f6bcb6a7ee4b44e07a5b5180dd02151170c435eea1d66b6e7a90eaa348389a5_bucket_2
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_7f6bcb6a7ee4b44e07a5b5180dd02151170c435eea1d66b6e7a90eaa348389a5_bucket_3
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_7f6bcb6a7ee4b44e07a5b5180dd02151170c435eea1d66b6e7a90eaa348389a5_bucket_4
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_7f6bcb6a7ee4b44e07a5b5180dd02151170c435eea1d66b6e7a90eaa348389a5_bucket_5
+│   │   │   │               │   └── graph.bin
+│   │   │   │               ├── jar_7f6bcb6a7ee4b44e07a5b5180dd02151170c435eea1d66b6e7a90eaa348389a5_bucket_6
+│   │   │   │               │   └── graph.bin
+│   │   │   │               └── jar_7f6bcb6a7ee4b44e07a5b5180dd02151170c435eea1d66b6e7a90eaa348389a5_bucket_7
+│   │   │   │                   └── graph.bin
+│   │   │   ├── dex
+│   │   │   │   └── debug
+│   │   │   │       ├── mergeExtDexDebug
+│   │   │   │       │   └── classes.dex
+│   │   │   │       ├── mergeLibDexDebug
+│   │   │   │       │   ├── 0
+│   │   │   │       │   ├── 1
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 10
+│   │   │   │       │   ├── 11
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 12
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 13
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 14
+│   │   │   │       │   ├── 15
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 2
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 3
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 4
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 5
+│   │   │   │       │   ├── 6
+│   │   │   │       │   ├── 7
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   ├── 8
+│   │   │   │       │   │   └── classes.dex
+│   │   │   │       │   └── 9
+│   │   │   │       │       └── classes.dex
+│   │   │   │       └── mergeProjectDexDebug
+│   │   │   │           ├── 0
+│   │   │   │           │   └── classes.dex
+│   │   │   │           ├── 1
+│   │   │   │           │   └── classes.dex
+│   │   │   │           ├── 10
+│   │   │   │           ├── 11
+│   │   │   │           ├── 12
+│   │   │   │           ├── 13
+│   │   │   │           ├── 14
+│   │   │   │           ├── 15
+│   │   │   │           ├── 2
+│   │   │   │           ├── 3
+│   │   │   │           ├── 4
+│   │   │   │           ├── 5
+│   │   │   │           ├── 6
+│   │   │   │           ├── 7
+│   │   │   │           ├── 8
+│   │   │   │           └── 9
+│   │   │   ├── dex_archive_input_jar_hashes
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── dex_number_of_buckets_file
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── duplicate_classes_check
+│   │   │   │   └── debug
+│   │   │   ├── external_file_lib_dex_archives
+│   │   │   │   └── debug
+│   │   │   ├── external_libs_dex_archive
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── external_libs_dex_archive_with_artifact_transforms
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── flutter
+│   │   │   │   └── debug
+│   │   │   │       ├── flutter_assets
+│   │   │   │       │   ├── assets
+│   │   │   │       │   │   └── models
+│   │   │   │       │   │       └── pose_classifier.tflite
+│   │   │   │       │   ├── fonts
+│   │   │   │       │   │   └── MaterialIcons-Regular.otf
+│   │   │   │       │   ├── lib
+│   │   │   │       │   │   └── assets
+│   │   │   │       │   │       └── models
+│   │   │   │       │   ├── shaders
+│   │   │   │       │   │   └── ink_sparkle.frag
+│   │   │   │       │   ├── AssetManifest.bin
+│   │   │   │       │   ├── AssetManifest.json
+│   │   │   │       │   ├── FontManifest.json
+│   │   │   │       │   ├── isolate_snapshot_data
+│   │   │   │       │   ├── kernel_blob.bin
+│   │   │   │       │   ├── NOTICES.Z
+│   │   │   │       │   └── vm_snapshot_data
+│   │   │   │       ├── .last_build_id
+│   │   │   │       ├── flutter_build.d
+│   │   │   │       └── libs.jar
+│   │   │   ├── incremental
+│   │   │   │   ├── debug
+│   │   │   │   │   ├── mergeDebugResources
+│   │   │   │   │   │   ├── merged.dir
+│   │   │   │   │   │   │   ├── values
+│   │   │   │   │   │   │   │   └── values.xml
+│   │   │   │   │   │   │   ├── values-af
+│   │   │   │   │   │   │   │   └── values-af.xml
+│   │   │   │   │   │   │   ├── values-am
+│   │   │   │   │   │   │   │   └── values-am.xml
+│   │   │   │   │   │   │   ├── values-ar
+│   │   │   │   │   │   │   │   └── values-ar.xml
+│   │   │   │   │   │   │   ├── values-as
+│   │   │   │   │   │   │   │   └── values-as.xml
+│   │   │   │   │   │   │   ├── values-az
+│   │   │   │   │   │   │   │   └── values-az.xml
+│   │   │   │   │   │   │   ├── values-b+sr+Latn
+│   │   │   │   │   │   │   │   └── values-b+sr+Latn.xml
+│   │   │   │   │   │   │   ├── values-be
+│   │   │   │   │   │   │   │   └── values-be.xml
+│   │   │   │   │   │   │   ├── values-bg
+│   │   │   │   │   │   │   │   └── values-bg.xml
+│   │   │   │   │   │   │   ├── values-bn
+│   │   │   │   │   │   │   │   └── values-bn.xml
+│   │   │   │   │   │   │   ├── values-bs
+│   │   │   │   │   │   │   │   └── values-bs.xml
+│   │   │   │   │   │   │   ├── values-ca
+│   │   │   │   │   │   │   │   └── values-ca.xml
+│   │   │   │   │   │   │   ├── values-cs
+│   │   │   │   │   │   │   │   └── values-cs.xml
+│   │   │   │   │   │   │   ├── values-da
+│   │   │   │   │   │   │   │   └── values-da.xml
+│   │   │   │   │   │   │   ├── values-de
+│   │   │   │   │   │   │   │   └── values-de.xml
+│   │   │   │   │   │   │   ├── values-el
+│   │   │   │   │   │   │   │   └── values-el.xml
+│   │   │   │   │   │   │   ├── values-en-rAU
+│   │   │   │   │   │   │   │   └── values-en-rAU.xml
+│   │   │   │   │   │   │   ├── values-en-rCA
+│   │   │   │   │   │   │   │   └── values-en-rCA.xml
+│   │   │   │   │   │   │   ├── values-en-rGB
+│   │   │   │   │   │   │   │   └── values-en-rGB.xml
+│   │   │   │   │   │   │   ├── values-en-rIN
+│   │   │   │   │   │   │   │   └── values-en-rIN.xml
+│   │   │   │   │   │   │   ├── values-en-rXC
+│   │   │   │   │   │   │   │   └── values-en-rXC.xml
+│   │   │   │   │   │   │   ├── values-es
+│   │   │   │   │   │   │   │   └── values-es.xml
+│   │   │   │   │   │   │   ├── values-es-rUS
+│   │   │   │   │   │   │   │   └── values-es-rUS.xml
+│   │   │   │   │   │   │   ├── values-et
+│   │   │   │   │   │   │   │   └── values-et.xml
+│   │   │   │   │   │   │   ├── values-eu
+│   │   │   │   │   │   │   │   └── values-eu.xml
+│   │   │   │   │   │   │   ├── values-fa
+│   │   │   │   │   │   │   │   └── values-fa.xml
+│   │   │   │   │   │   │   ├── values-fi
+│   │   │   │   │   │   │   │   └── values-fi.xml
+│   │   │   │   │   │   │   ├── values-fr
+│   │   │   │   │   │   │   │   └── values-fr.xml
+│   │   │   │   │   │   │   ├── values-fr-rCA
+│   │   │   │   │   │   │   │   └── values-fr-rCA.xml
+│   │   │   │   │   │   │   ├── values-gl
+│   │   │   │   │   │   │   │   └── values-gl.xml
+│   │   │   │   │   │   │   ├── values-gu
+│   │   │   │   │   │   │   │   └── values-gu.xml
+│   │   │   │   │   │   │   ├── values-hi
+│   │   │   │   │   │   │   │   └── values-hi.xml
+│   │   │   │   │   │   │   ├── values-hr
+│   │   │   │   │   │   │   │   └── values-hr.xml
+│   │   │   │   │   │   │   ├── values-hu
+│   │   │   │   │   │   │   │   └── values-hu.xml
+│   │   │   │   │   │   │   ├── values-hy
+│   │   │   │   │   │   │   │   └── values-hy.xml
+│   │   │   │   │   │   │   ├── values-in
+│   │   │   │   │   │   │   │   └── values-in.xml
+│   │   │   │   │   │   │   ├── values-is
+│   │   │   │   │   │   │   │   └── values-is.xml
+│   │   │   │   │   │   │   ├── values-it
+│   │   │   │   │   │   │   │   └── values-it.xml
+│   │   │   │   │   │   │   ├── values-iw
+│   │   │   │   │   │   │   │   └── values-iw.xml
+│   │   │   │   │   │   │   ├── values-ja
+│   │   │   │   │   │   │   │   └── values-ja.xml
+│   │   │   │   │   │   │   ├── values-ka
+│   │   │   │   │   │   │   │   └── values-ka.xml
+│   │   │   │   │   │   │   ├── values-kk
+│   │   │   │   │   │   │   │   └── values-kk.xml
+│   │   │   │   │   │   │   ├── values-km
+│   │   │   │   │   │   │   │   └── values-km.xml
+│   │   │   │   │   │   │   ├── values-kn
+│   │   │   │   │   │   │   │   └── values-kn.xml
+│   │   │   │   │   │   │   ├── values-ko
+│   │   │   │   │   │   │   │   └── values-ko.xml
+│   │   │   │   │   │   │   ├── values-ky
+│   │   │   │   │   │   │   │   └── values-ky.xml
+│   │   │   │   │   │   │   ├── values-lo
+│   │   │   │   │   │   │   │   └── values-lo.xml
+│   │   │   │   │   │   │   ├── values-lt
+│   │   │   │   │   │   │   │   └── values-lt.xml
+│   │   │   │   │   │   │   ├── values-lv
+│   │   │   │   │   │   │   │   └── values-lv.xml
+│   │   │   │   │   │   │   ├── values-mk
+│   │   │   │   │   │   │   │   └── values-mk.xml
+│   │   │   │   │   │   │   ├── values-ml
+│   │   │   │   │   │   │   │   └── values-ml.xml
+│   │   │   │   │   │   │   ├── values-mn
+│   │   │   │   │   │   │   │   └── values-mn.xml
+│   │   │   │   │   │   │   ├── values-mr
+│   │   │   │   │   │   │   │   └── values-mr.xml
+│   │   │   │   │   │   │   ├── values-ms
+│   │   │   │   │   │   │   │   └── values-ms.xml
+│   │   │   │   │   │   │   ├── values-my
+│   │   │   │   │   │   │   │   └── values-my.xml
+│   │   │   │   │   │   │   ├── values-nb
+│   │   │   │   │   │   │   │   └── values-nb.xml
+│   │   │   │   │   │   │   ├── values-ne
+│   │   │   │   │   │   │   │   └── values-ne.xml
+│   │   │   │   │   │   │   ├── values-night-v8
+│   │   │   │   │   │   │   │   └── values-night-v8.xml
+│   │   │   │   │   │   │   ├── values-nl
+│   │   │   │   │   │   │   │   └── values-nl.xml
+│   │   │   │   │   │   │   ├── values-or
+│   │   │   │   │   │   │   │   └── values-or.xml
+│   │   │   │   │   │   │   ├── values-pa
+│   │   │   │   │   │   │   │   └── values-pa.xml
+│   │   │   │   │   │   │   ├── values-pl
+│   │   │   │   │   │   │   │   └── values-pl.xml
+│   │   │   │   │   │   │   ├── values-pt
+│   │   │   │   │   │   │   │   └── values-pt.xml
+│   │   │   │   │   │   │   ├── values-pt-rBR
+│   │   │   │   │   │   │   │   └── values-pt-rBR.xml
+│   │   │   │   │   │   │   ├── values-pt-rPT
+│   │   │   │   │   │   │   │   └── values-pt-rPT.xml
+│   │   │   │   │   │   │   ├── values-ro
+│   │   │   │   │   │   │   │   └── values-ro.xml
+│   │   │   │   │   │   │   ├── values-ru
+│   │   │   │   │   │   │   │   └── values-ru.xml
+│   │   │   │   │   │   │   ├── values-si
+│   │   │   │   │   │   │   │   └── values-si.xml
+│   │   │   │   │   │   │   ├── values-sk
+│   │   │   │   │   │   │   │   └── values-sk.xml
+│   │   │   │   │   │   │   ├── values-sl
+│   │   │   │   │   │   │   │   └── values-sl.xml
+│   │   │   │   │   │   │   ├── values-sq
+│   │   │   │   │   │   │   │   └── values-sq.xml
+│   │   │   │   │   │   │   ├── values-sr
+│   │   │   │   │   │   │   │   └── values-sr.xml
+│   │   │   │   │   │   │   ├── values-sv
+│   │   │   │   │   │   │   │   └── values-sv.xml
+│   │   │   │   │   │   │   ├── values-sw
+│   │   │   │   │   │   │   │   └── values-sw.xml
+│   │   │   │   │   │   │   ├── values-ta
+│   │   │   │   │   │   │   │   └── values-ta.xml
+│   │   │   │   │   │   │   ├── values-te
+│   │   │   │   │   │   │   │   └── values-te.xml
+│   │   │   │   │   │   │   ├── values-th
+│   │   │   │   │   │   │   │   └── values-th.xml
+│   │   │   │   │   │   │   ├── values-tl
+│   │   │   │   │   │   │   │   └── values-tl.xml
+│   │   │   │   │   │   │   ├── values-tr
+│   │   │   │   │   │   │   │   └── values-tr.xml
+│   │   │   │   │   │   │   ├── values-uk
+│   │   │   │   │   │   │   │   └── values-uk.xml
+│   │   │   │   │   │   │   ├── values-ur
+│   │   │   │   │   │   │   │   └── values-ur.xml
+│   │   │   │   │   │   │   ├── values-uz
+│   │   │   │   │   │   │   │   └── values-uz.xml
+│   │   │   │   │   │   │   ├── values-v21
+│   │   │   │   │   │   │   │   └── values-v21.xml
+│   │   │   │   │   │   │   ├── values-vi
+│   │   │   │   │   │   │   │   └── values-vi.xml
+│   │   │   │   │   │   │   ├── values-zh-rCN
+│   │   │   │   │   │   │   │   └── values-zh-rCN.xml
+│   │   │   │   │   │   │   ├── values-zh-rHK
+│   │   │   │   │   │   │   │   └── values-zh-rHK.xml
+│   │   │   │   │   │   │   ├── values-zh-rTW
+│   │   │   │   │   │   │   │   └── values-zh-rTW.xml
+│   │   │   │   │   │   │   └── values-zu
+│   │   │   │   │   │   │       └── values-zu.xml
+│   │   │   │   │   │   ├── stripped.dir
+│   │   │   │   │   │   ├── compile-file-map.properties
+│   │   │   │   │   │   └── merger.xml
+│   │   │   │   │   └── packageDebugResources
+│   │   │   │   │       ├── merged.dir
+│   │   │   │   │       │   ├── values
+│   │   │   │   │       │   │   └── values.xml
+│   │   │   │   │       │   └── values-night-v8
+│   │   │   │   │       │       └── values-night-v8.xml
+│   │   │   │   │       ├── stripped.dir
+│   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │       └── merger.xml
+│   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   ├── zip-cache
+│   │   │   │   │   │   ├── +8RLPCjgSsMl2lXP207t55D7WJA=
+│   │   │   │   │   │   ├── 05CGeZBYYaKGkF7vKRmPfawy1qw=
+│   │   │   │   │   │   ├── 1zlo73O+rP+LeuoQLg7W0aPl9VA=
+│   │   │   │   │   │   ├── 55q3AbAeMjirZ23rtcoHM2vgO6M=
+│   │   │   │   │   │   ├── 5D8+cnFaYGn0lY3Gtxj+OzVMRZg=
+│   │   │   │   │   │   ├── BPGPMHxmxz3kuzw8l9gtvoHYTtY=
+│   │   │   │   │   │   ├── BQdUnxSx_D20QHGSXIZLjRDXXs0=
+│   │   │   │   │   │   ├── Bsn56JjPkpZA4Ds7jApsx6m4WiM=
+│   │   │   │   │   │   ├── hjariqREY38Be8hYiRu2knqYSCk=
+│   │   │   │   │   │   ├── hT2F1T4Po4xsdAKYs5cTdNqdUEI=
+│   │   │   │   │   │   ├── i16tMXX9y8V8Spy+CLt71QjGoDA=
+│   │   │   │   │   │   ├── I6yjM3_FFWM_JY6_CI+CS1JXDzo=
+│   │   │   │   │   │   ├── itdDWvCKCGK9nMeHq2xdVyN+atU=
+│   │   │   │   │   │   ├── ittXX+xkINAMLSwYuiP+SZZrIQE=
+│   │   │   │   │   │   ├── IWoVKVi7atRTeZ3sFb50UfouiL8=
+│   │   │   │   │   │   ├── JcuXRkAhcqU1ZiFmNFG6t7Q8CC0=
+│   │   │   │   │   │   ├── jgx_THSRcefWQcZmSR8rT7usnXA=
+│   │   │   │   │   │   ├── jQPkPEKNw+5cOjp9w2OqoVXN3to=
+│   │   │   │   │   │   ├── l1JK8dZuR72vZAKpwjYchgBOTJw=
+│   │   │   │   │   │   ├── MdOeNShQxCA+0QvpTZzkEU+1xoI=
+│   │   │   │   │   │   ├── mL87xCvPC3u3JcjZE9A27sO0pqw=
+│   │   │   │   │   │   ├── MSNX3iGg0bJeKDbZZEtPBd_N0Ao=
+│   │   │   │   │   │   ├── NlG+4t5sHX0Ws4jrmOv6vJXRIME=
+│   │   │   │   │   │   ├── O+MSg7aMlXVh3iV9Ghp8TjBFrUQ=
+│   │   │   │   │   │   ├── obEX28_SKmE2cCGtLW1+BbEfC5o=
+│   │   │   │   │   │   ├── oF3h9HMjKGanz47NCeiq5Oat6qA=
+│   │   │   │   │   │   ├── oI1jpRg8D6y61tC2zcj3MVc1uHw=
+│   │   │   │   │   │   ├── qDXXySEkIbt5pOhx8pwCmWkSwXc=
+│   │   │   │   │   │   ├── qEnrztAweltYHIBsWOnWd5yKaa8=
+│   │   │   │   │   │   ├── qKD00lLqOMvvLIpBpBNNlrmtzfM=
+│   │   │   │   │   │   ├── qPVQIR3iblHQIHLY+6puoBHt90o=
+│   │   │   │   │   │   ├── qVjpvjysRaI551zTbWKfDrN8ZQ4=
+│   │   │   │   │   │   ├── qX62CHcUnf+m+QOE6sLO8io3J_Q=
+│   │   │   │   │   │   ├── rHeC5946+X61Vfg1AGoMzXViEoQ=
+│   │   │   │   │   │   ├── rOxrIPrIj7TozWodS+tTM2kftmI=
+│   │   │   │   │   │   ├── sqCfFYj13_5+k4461hY4PwSUXYA=
+│   │   │   │   │   │   ├── U9nL05jtphfeVEwVDpqs1UylvIw=
+│   │   │   │   │   │   ├── Uyh1RNAaVA5hdRfEKUX_Nk8KXRY=
+│   │   │   │   │   │   ├── vyFGw2WvOM098QcVYoAfCIJJyUc=
+│   │   │   │   │   │   ├── WAutdm4KG7nFhk3riaLUJkbCP9s=
+│   │   │   │   │   │   ├── WsUIDzs6HWVwsCayUDLZFHQjwCE=
+│   │   │   │   │   │   ├── X4IjLkCwNt39PYvgjhNjkhvpwuY=
+│   │   │   │   │   │   ├── xZ6AE8yvwnghUErpdGJEksHfJfU=
+│   │   │   │   │   │   ├── ybeqzhiHZdQvRt2FQjmOpuCuGCw=
+│   │   │   │   │   │   ├── yHEKsisub7RU7Y0RZUCgY48gRDc=
+│   │   │   │   │   │   └── yYk5z4g12qqEhB3mjMYIfovpeBU=
+│   │   │   │   │   └── merge-state
+│   │   │   │   ├── mergeDebugAssets
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   └── packageDebug
+│   │   │   │       └── tmp
+│   │   │   │           └── debug
+│   │   │   │               ├── zip-cache
+│   │   │   │               │   ├── androidResources
+│   │   │   │               │   └── javaResources0
+│   │   │   │               └── dex-renamer-state.txt
+│   │   │   ├── java_res
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           ├── com
+│   │   │   │           │   └── example
+│   │   │   │           │       └── calimiro_app
+│   │   │   │           └── META-INF
+│   │   │   │               └── app_debug.kotlin_module
+│   │   │   ├── javac
+│   │   │   │   └── debug
+│   │   │   │       └── classes
+│   │   │   │           └── io
+│   │   │   │               └── flutter
+│   │   │   │                   └── plugins
+│   │   │   │                       └── GeneratedPluginRegistrant.class
+│   │   │   ├── local_only_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R-def.txt
+│   │   │   ├── manifest_merge_blame_file
+│   │   │   │   └── debug
+│   │   │   │       └── manifest-merger-blame-debug-report.txt
+│   │   │   ├── merged_java_res
+│   │   │   │   └── debug
+│   │   │   │       └── base.jar
+│   │   │   ├── merged_jni_libs
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── merged_manifest
+│   │   │   │   └── debug
+│   │   │   │       └── AndroidManifest.xml
+│   │   │   ├── merged_manifests
+│   │   │   │   └── debug
+│   │   │   │       ├── AndroidManifest.xml
+│   │   │   │       └── output-metadata.json
+│   │   │   ├── merged_native_libs
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           └── lib
+│   │   │   │               ├── arm64-v8a
+│   │   │   │               │   ├── libflutter.so
+│   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
+│   │   │   │               │   ├── libtensorflowlite_jni.so
+│   │   │   │               │   └── libVkLayer_khronos_validation.so
+│   │   │   │               ├── armeabi-v7a
+│   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
+│   │   │   │               │   └── libtensorflowlite_jni.so
+│   │   │   │               ├── x86
+│   │   │   │               │   ├── libflutter.so
+│   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
+│   │   │   │               │   └── libtensorflowlite_jni.so
+│   │   │   │               └── x86_64
+│   │   │   │                   ├── libflutter.so
+│   │   │   │                   ├── libtensorflowlite_gpu_jni.so
+│   │   │   │                   └── libtensorflowlite_jni.so
+│   │   │   ├── merged_res
+│   │   │   │   └── debug
+│   │   │   │       ├── drawable-v21_launch_background.xml.flat
+│   │   │   │       ├── mipmap-hdpi_ic_launcher.png.flat
+│   │   │   │       ├── mipmap-mdpi_ic_launcher.png.flat
+│   │   │   │       ├── mipmap-xhdpi_ic_launcher.png.flat
+│   │   │   │       ├── mipmap-xxhdpi_ic_launcher.png.flat
+│   │   │   │       ├── mipmap-xxxhdpi_ic_launcher.png.flat
+│   │   │   │       ├── values-af_values-af.arsc.flat
+│   │   │   │       ├── values-am_values-am.arsc.flat
+│   │   │   │       ├── values-ar_values-ar.arsc.flat
+│   │   │   │       ├── values-as_values-as.arsc.flat
+│   │   │   │       ├── values-az_values-az.arsc.flat
+│   │   │   │       ├── values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+│   │   │   │       ├── values-be_values-be.arsc.flat
+│   │   │   │       ├── values-bg_values-bg.arsc.flat
+│   │   │   │       ├── values-bn_values-bn.arsc.flat
+│   │   │   │       ├── values-bs_values-bs.arsc.flat
+│   │   │   │       ├── values-ca_values-ca.arsc.flat
+│   │   │   │       ├── values-cs_values-cs.arsc.flat
+│   │   │   │       ├── values-da_values-da.arsc.flat
+│   │   │   │       ├── values-de_values-de.arsc.flat
+│   │   │   │       ├── values-el_values-el.arsc.flat
+│   │   │   │       ├── values-en-rAU_values-en-rAU.arsc.flat
+│   │   │   │       ├── values-en-rCA_values-en-rCA.arsc.flat
+│   │   │   │       ├── values-en-rGB_values-en-rGB.arsc.flat
+│   │   │   │       ├── values-en-rIN_values-en-rIN.arsc.flat
+│   │   │   │       ├── values-en-rXC_values-en-rXC.arsc.flat
+│   │   │   │       ├── values-es-rUS_values-es-rUS.arsc.flat
+│   │   │   │       ├── values-es_values-es.arsc.flat
+│   │   │   │       ├── values-et_values-et.arsc.flat
+│   │   │   │       ├── values-eu_values-eu.arsc.flat
+│   │   │   │       ├── values-fa_values-fa.arsc.flat
+│   │   │   │       ├── values-fi_values-fi.arsc.flat
+│   │   │   │       ├── values-fr-rCA_values-fr-rCA.arsc.flat
+│   │   │   │       ├── values-fr_values-fr.arsc.flat
+│   │   │   │       ├── values-gl_values-gl.arsc.flat
+│   │   │   │       ├── values-gu_values-gu.arsc.flat
+│   │   │   │       ├── values-hi_values-hi.arsc.flat
+│   │   │   │       ├── values-hr_values-hr.arsc.flat
+│   │   │   │       ├── values-hu_values-hu.arsc.flat
+│   │   │   │       ├── values-hy_values-hy.arsc.flat
+│   │   │   │       ├── values-in_values-in.arsc.flat
+│   │   │   │       ├── values-is_values-is.arsc.flat
+│   │   │   │       ├── values-it_values-it.arsc.flat
+│   │   │   │       ├── values-iw_values-iw.arsc.flat
+│   │   │   │       ├── values-ja_values-ja.arsc.flat
+│   │   │   │       ├── values-ka_values-ka.arsc.flat
+│   │   │   │       ├── values-kk_values-kk.arsc.flat
+│   │   │   │       ├── values-km_values-km.arsc.flat
+│   │   │   │       ├── values-kn_values-kn.arsc.flat
+│   │   │   │       ├── values-ko_values-ko.arsc.flat
+│   │   │   │       ├── values-ky_values-ky.arsc.flat
+│   │   │   │       ├── values-lo_values-lo.arsc.flat
+│   │   │   │       ├── values-lt_values-lt.arsc.flat
+│   │   │   │       ├── values-lv_values-lv.arsc.flat
+│   │   │   │       ├── values-mk_values-mk.arsc.flat
+│   │   │   │       ├── values-ml_values-ml.arsc.flat
+│   │   │   │       ├── values-mn_values-mn.arsc.flat
+│   │   │   │       ├── values-mr_values-mr.arsc.flat
+│   │   │   │       ├── values-ms_values-ms.arsc.flat
+│   │   │   │       ├── values-my_values-my.arsc.flat
+│   │   │   │       ├── values-nb_values-nb.arsc.flat
+│   │   │   │       ├── values-ne_values-ne.arsc.flat
+│   │   │   │       ├── values-night-v8_values-night-v8.arsc.flat
+│   │   │   │       ├── values-nl_values-nl.arsc.flat
+│   │   │   │       ├── values-or_values-or.arsc.flat
+│   │   │   │       ├── values-pa_values-pa.arsc.flat
+│   │   │   │       ├── values-pl_values-pl.arsc.flat
+│   │   │   │       ├── values-pt-rBR_values-pt-rBR.arsc.flat
+│   │   │   │       ├── values-pt-rPT_values-pt-rPT.arsc.flat
+│   │   │   │       ├── values-pt_values-pt.arsc.flat
+│   │   │   │       ├── values-ro_values-ro.arsc.flat
+│   │   │   │       ├── values-ru_values-ru.arsc.flat
+│   │   │   │       ├── values-si_values-si.arsc.flat
+│   │   │   │       ├── values-sk_values-sk.arsc.flat
+│   │   │   │       ├── values-sl_values-sl.arsc.flat
+│   │   │   │       ├── values-sq_values-sq.arsc.flat
+│   │   │   │       ├── values-sr_values-sr.arsc.flat
+│   │   │   │       ├── values-sv_values-sv.arsc.flat
+│   │   │   │       ├── values-sw_values-sw.arsc.flat
+│   │   │   │       ├── values-ta_values-ta.arsc.flat
+│   │   │   │       ├── values-te_values-te.arsc.flat
+│   │   │   │       ├── values-th_values-th.arsc.flat
+│   │   │   │       ├── values-tl_values-tl.arsc.flat
+│   │   │   │       ├── values-tr_values-tr.arsc.flat
+│   │   │   │       ├── values-uk_values-uk.arsc.flat
+│   │   │   │       ├── values-ur_values-ur.arsc.flat
+│   │   │   │       ├── values-uz_values-uz.arsc.flat
+│   │   │   │       ├── values-v21_values-v21.arsc.flat
+│   │   │   │       ├── values-vi_values-vi.arsc.flat
+│   │   │   │       ├── values-zh-rCN_values-zh-rCN.arsc.flat
+│   │   │   │       ├── values-zh-rHK_values-zh-rHK.arsc.flat
+│   │   │   │       ├── values-zh-rTW_values-zh-rTW.arsc.flat
+│   │   │   │       ├── values-zu_values-zu.arsc.flat
+│   │   │   │       └── values_values.arsc.flat
+│   │   │   ├── merged_res_blame_folder
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           ├── multi-v2
+│   │   │   │           │   ├── debug.json
+│   │   │   │           │   ├── values-af.json
+│   │   │   │           │   ├── values-am.json
+│   │   │   │           │   ├── values-ar.json
+│   │   │   │           │   ├── values-as.json
+│   │   │   │           │   ├── values-az.json
+│   │   │   │           │   ├── values-b+sr+Latn.json
+│   │   │   │           │   ├── values-be.json
+│   │   │   │           │   ├── values-bg.json
+│   │   │   │           │   ├── values-bn.json
+│   │   │   │           │   ├── values-bs.json
+│   │   │   │           │   ├── values-ca.json
+│   │   │   │           │   ├── values-cs.json
+│   │   │   │           │   ├── values-da.json
+│   │   │   │           │   ├── values-de.json
+│   │   │   │           │   ├── values-el.json
+│   │   │   │           │   ├── values-en-rAU.json
+│   │   │   │           │   ├── values-en-rCA.json
+│   │   │   │           │   ├── values-en-rGB.json
+│   │   │   │           │   ├── values-en-rIN.json
+│   │   │   │           │   ├── values-en-rXC.json
+│   │   │   │           │   ├── values-es-rUS.json
+│   │   │   │           │   ├── values-es.json
+│   │   │   │           │   ├── values-et.json
+│   │   │   │           │   ├── values-eu.json
+│   │   │   │           │   ├── values-fa.json
+│   │   │   │           │   ├── values-fi.json
+│   │   │   │           │   ├── values-fr-rCA.json
+│   │   │   │           │   ├── values-fr.json
+│   │   │   │           │   ├── values-gl.json
+│   │   │   │           │   ├── values-gu.json
+│   │   │   │           │   ├── values-hi.json
+│   │   │   │           │   ├── values-hr.json
+│   │   │   │           │   ├── values-hu.json
+│   │   │   │           │   ├── values-hy.json
+│   │   │   │           │   ├── values-in.json
+│   │   │   │           │   ├── values-is.json
+│   │   │   │           │   ├── values-it.json
+│   │   │   │           │   ├── values-iw.json
+│   │   │   │           │   ├── values-ja.json
+│   │   │   │           │   ├── values-ka.json
+│   │   │   │           │   ├── values-kk.json
+│   │   │   │           │   ├── values-km.json
+│   │   │   │           │   ├── values-kn.json
+│   │   │   │           │   ├── values-ko.json
+│   │   │   │           │   ├── values-ky.json
+│   │   │   │           │   ├── values-lo.json
+│   │   │   │           │   ├── values-lt.json
+│   │   │   │           │   ├── values-lv.json
+│   │   │   │           │   ├── values-mk.json
+│   │   │   │           │   ├── values-ml.json
+│   │   │   │           │   ├── values-mn.json
+│   │   │   │           │   ├── values-mr.json
+│   │   │   │           │   ├── values-ms.json
+│   │   │   │           │   ├── values-my.json
+│   │   │   │           │   ├── values-nb.json
+│   │   │   │           │   ├── values-ne.json
+│   │   │   │           │   ├── values-night-v8.json
+│   │   │   │           │   ├── values-nl.json
+│   │   │   │           │   ├── values-or.json
+│   │   │   │           │   ├── values-pa.json
+│   │   │   │           │   ├── values-pl.json
+│   │   │   │           │   ├── values-pt-rBR.json
+│   │   │   │           │   ├── values-pt-rPT.json
+│   │   │   │           │   ├── values-pt.json
+│   │   │   │           │   ├── values-ro.json
+│   │   │   │           │   ├── values-ru.json
+│   │   │   │           │   ├── values-si.json
+│   │   │   │           │   ├── values-sk.json
+│   │   │   │           │   ├── values-sl.json
+│   │   │   │           │   ├── values-sq.json
+│   │   │   │           │   ├── values-sr.json
+│   │   │   │           │   ├── values-sv.json
+│   │   │   │           │   ├── values-sw.json
+│   │   │   │           │   ├── values-ta.json
+│   │   │   │           │   ├── values-te.json
+│   │   │   │           │   ├── values-th.json
+│   │   │   │           │   ├── values-tl.json
+│   │   │   │           │   ├── values-tr.json
+│   │   │   │           │   ├── values-uk.json
+│   │   │   │           │   ├── values-ur.json
+│   │   │   │           │   ├── values-uz.json
+│   │   │   │           │   ├── values-v21.json
+│   │   │   │           │   ├── values-vi.json
+│   │   │   │           │   ├── values-zh-rCN.json
+│   │   │   │           │   ├── values-zh-rHK.json
+│   │   │   │           │   ├── values-zh-rTW.json
+│   │   │   │           │   ├── values-zu.json
+│   │   │   │           │   └── values.json
+│   │   │   │           └── single
+│   │   │   │               └── debug.json
+│   │   │   ├── merged_shaders
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── mixed_scope_dex_archive
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── navigation_json
+│   │   │   │   └── debug
+│   │   │   │       └── navigation.json
+│   │   │   ├── packaged_manifests
+│   │   │   │   └── debug
+│   │   │   │       ├── AndroidManifest.xml
+│   │   │   │       └── output-metadata.json
+│   │   │   ├── packaged_res
+│   │   │   │   └── debug
+│   │   │   │       ├── drawable-v21
+│   │   │   │       │   └── launch_background.xml
+│   │   │   │       ├── mipmap-hdpi-v4
+│   │   │   │       │   └── ic_launcher.png
+│   │   │   │       ├── mipmap-mdpi-v4
+│   │   │   │       │   └── ic_launcher.png
+│   │   │   │       ├── mipmap-xhdpi-v4
+│   │   │   │       │   └── ic_launcher.png
+│   │   │   │       ├── mipmap-xxhdpi-v4
+│   │   │   │       │   └── ic_launcher.png
+│   │   │   │       ├── mipmap-xxxhdpi-v4
+│   │   │   │       │   └── ic_launcher.png
+│   │   │   │       ├── values
+│   │   │   │       │   └── values.xml
+│   │   │   │       └── values-night-v8
+│   │   │   │           └── values-night-v8.xml
+│   │   │   ├── processed_res
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           ├── output-metadata.json
+│   │   │   │           └── resources-debug.ap_
+│   │   │   ├── project_dex_archive
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           ├── com
+│   │   │   │           │   └── example
+│   │   │   │           │       └── calimiro_app
+│   │   │   │           │           └── MainActivity.dex
+│   │   │   │           ├── io
+│   │   │   │           │   └── flutter
+│   │   │   │           │       └── plugins
+│   │   │   │           │           └── GeneratedPluginRegistrant.dex
+│   │   │   │           ├── e7847030edc5169add058408b5aa9b52bbd815f45b12a1b31ae1c2f44c9d2269_0.jar
+│   │   │   │           ├── e7847030edc5169add058408b5aa9b52bbd815f45b12a1b31ae1c2f44c9d2269_1.jar
+│   │   │   │           ├── e7847030edc5169add058408b5aa9b52bbd815f45b12a1b31ae1c2f44c9d2269_2.jar
+│   │   │   │           ├── e7847030edc5169add058408b5aa9b52bbd815f45b12a1b31ae1c2f44c9d2269_3.jar
+│   │   │   │           ├── e7847030edc5169add058408b5aa9b52bbd815f45b12a1b31ae1c2f44c9d2269_4.jar
+│   │   │   │           ├── e7847030edc5169add058408b5aa9b52bbd815f45b12a1b31ae1c2f44c9d2269_5.jar
+│   │   │   │           ├── e7847030edc5169add058408b5aa9b52bbd815f45b12a1b31ae1c2f44c9d2269_6.jar
+│   │   │   │           └── e7847030edc5169add058408b5aa9b52bbd815f45b12a1b31ae1c2f44c9d2269_7.jar
+│   │   │   ├── runtime_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R.txt
+│   │   │   ├── signing_config_versions
+│   │   │   │   └── debug
+│   │   │   │       └── signing-config-versions.json
+│   │   │   ├── source_set_path_map
+│   │   │   │   └── debug
+│   │   │   │       └── file-map.txt
+│   │   │   ├── stripped_native_libs
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           └── lib
+│   │   │   │               ├── arm64-v8a
+│   │   │   │               │   ├── libflutter.so
+│   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
+│   │   │   │               │   ├── libtensorflowlite_jni.so
+│   │   │   │               │   └── libVkLayer_khronos_validation.so
+│   │   │   │               ├── armeabi-v7a
+│   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
+│   │   │   │               │   └── libtensorflowlite_jni.so
+│   │   │   │               ├── x86
+│   │   │   │               │   ├── libflutter.so
+│   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
+│   │   │   │               │   └── libtensorflowlite_jni.so
+│   │   │   │               └── x86_64
+│   │   │   │                   ├── libflutter.so
+│   │   │   │                   ├── libtensorflowlite_gpu_jni.so
+│   │   │   │                   └── libtensorflowlite_jni.so
+│   │   │   ├── sub_project_dex_archive
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   │           ├── 3fdbaa82b925fa645715fdf584d42ab0265dd718b81b86f4f4b46c16b5279793_0.jar
+│   │   │   │           ├── 3fdbaa82b925fa645715fdf584d42ab0265dd718b81b86f4f4b46c16b5279793_1.jar
+│   │   │   │           ├── 3fdbaa82b925fa645715fdf584d42ab0265dd718b81b86f4f4b46c16b5279793_2.jar
+│   │   │   │           ├── 3fdbaa82b925fa645715fdf584d42ab0265dd718b81b86f4f4b46c16b5279793_3.jar
+│   │   │   │           ├── 3fdbaa82b925fa645715fdf584d42ab0265dd718b81b86f4f4b46c16b5279793_4.jar
+│   │   │   │           ├── 3fdbaa82b925fa645715fdf584d42ab0265dd718b81b86f4f4b46c16b5279793_5.jar
+│   │   │   │           ├── 3fdbaa82b925fa645715fdf584d42ab0265dd718b81b86f4f4b46c16b5279793_6.jar
+│   │   │   │           ├── 3fdbaa82b925fa645715fdf584d42ab0265dd718b81b86f4f4b46c16b5279793_7.jar
+│   │   │   │           ├── c8cee1fc9a9213c9ed6d2080f9ec1430bdd533db3df6bb57494b5046a46e0597_1.jar
+│   │   │   │           ├── f865baeb5e83068816cbb370c6ff2bc933c269cac79f68469b20f1237a7a8c94_2.jar
+│   │   │   │           └── f865baeb5e83068816cbb370c6ff2bc933c269cac79f68469b20f1237a7a8c94_4.jar
+│   │   │   ├── symbol_list_with_package_name
+│   │   │   │   └── debug
+│   │   │   │       └── package-aware-r.txt
+│   │   │   └── validate_signing_config
+│   │   │       └── debug
+│   │   ├── kotlin
+│   │   │   └── compileDebugKotlin
+│   │   │       ├── cacheable
+│   │   │       │   ├── caches-jvm
+│   │   │       │   │   ├── inputs
+│   │   │       │   │   │   ├── source-to-output.tab
+│   │   │       │   │   │   ├── source-to-output.tab.keystream
+│   │   │       │   │   │   ├── source-to-output.tab.keystream.len
+│   │   │       │   │   │   ├── source-to-output.tab.len
+│   │   │       │   │   │   ├── source-to-output.tab.values.at
+│   │   │       │   │   │   ├── source-to-output.tab_i
+│   │   │       │   │   │   └── source-to-output.tab_i.len
+│   │   │       │   │   ├── jvm
+│   │   │       │   │   │   └── kotlin
+│   │   │       │   │   │       ├── class-attributes.tab
+│   │   │       │   │   │       ├── class-attributes.tab.keystream
+│   │   │       │   │   │       ├── class-attributes.tab.keystream.len
+│   │   │       │   │   │       ├── class-attributes.tab.len
+│   │   │       │   │   │       ├── class-attributes.tab.values.at
+│   │   │       │   │   │       ├── class-attributes.tab_i
+│   │   │       │   │   │       ├── class-attributes.tab_i.len
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab.keystream.len
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab.len
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab.values.at
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab_i
+│   │   │       │   │   │       ├── class-fq-name-to-source.tab_i.len
+│   │   │       │   │   │       ├── internal-name-to-source.tab
+│   │   │       │   │   │       ├── internal-name-to-source.tab.keystream
+│   │   │       │   │   │       ├── internal-name-to-source.tab.keystream.len
+│   │   │       │   │   │       ├── internal-name-to-source.tab.len
+│   │   │       │   │   │       ├── internal-name-to-source.tab.values.at
+│   │   │       │   │   │       ├── internal-name-to-source.tab_i
+│   │   │       │   │   │       ├── internal-name-to-source.tab_i.len
+│   │   │       │   │   │       ├── proto.tab
+│   │   │       │   │   │       ├── proto.tab.keystream
+│   │   │       │   │   │       ├── proto.tab.keystream.len
+│   │   │       │   │   │       ├── proto.tab.len
+│   │   │       │   │   │       ├── proto.tab.values.at
+│   │   │       │   │   │       ├── proto.tab_i
+│   │   │       │   │   │       ├── proto.tab_i.len
+│   │   │       │   │   │       ├── source-to-classes.tab
+│   │   │       │   │   │       ├── source-to-classes.tab.keystream
+│   │   │       │   │   │       ├── source-to-classes.tab.keystream.len
+│   │   │       │   │   │       ├── source-to-classes.tab.len
+│   │   │       │   │   │       ├── source-to-classes.tab.values.at
+│   │   │       │   │   │       ├── source-to-classes.tab_i
+│   │   │       │   │   │       ├── source-to-classes.tab_i.len
+│   │   │       │   │   │       ├── subtypes.tab
+│   │   │       │   │   │       ├── subtypes.tab.keystream
+│   │   │       │   │   │       ├── subtypes.tab.keystream.len
+│   │   │       │   │   │       ├── subtypes.tab.len
+│   │   │       │   │   │       ├── subtypes.tab.values.at
+│   │   │       │   │   │       ├── subtypes.tab_i
+│   │   │       │   │   │       ├── subtypes.tab_i.len
+│   │   │       │   │   │       ├── supertypes.tab
+│   │   │       │   │   │       ├── supertypes.tab.keystream
+│   │   │       │   │   │       ├── supertypes.tab.keystream.len
+│   │   │       │   │   │       ├── supertypes.tab.len
+│   │   │       │   │   │       ├── supertypes.tab.values.at
+│   │   │       │   │   │       ├── supertypes.tab_i
+│   │   │       │   │   │       └── supertypes.tab_i.len
+│   │   │       │   │   └── lookups
+│   │   │       │   │       ├── counters.tab
+│   │   │       │   │       ├── file-to-id.tab
+│   │   │       │   │       ├── file-to-id.tab.keystream
+│   │   │       │   │       ├── file-to-id.tab.keystream.len
+│   │   │       │   │       ├── file-to-id.tab.len
+│   │   │       │   │       ├── file-to-id.tab.values.at
+│   │   │       │   │       ├── file-to-id.tab_i
+│   │   │       │   │       ├── file-to-id.tab_i.len
+│   │   │       │   │       ├── id-to-file.tab
+│   │   │       │   │       ├── id-to-file.tab.keystream
+│   │   │       │   │       ├── id-to-file.tab.keystream.len
+│   │   │       │   │       ├── id-to-file.tab.len
+│   │   │       │   │       ├── id-to-file.tab.values.at
+│   │   │       │   │       ├── lookups.tab
+│   │   │       │   │       ├── lookups.tab.keystream
+│   │   │       │   │       ├── lookups.tab.keystream.len
+│   │   │       │   │       ├── lookups.tab.len
+│   │   │       │   │       ├── lookups.tab.values.at
+│   │   │       │   │       ├── lookups.tab_i
+│   │   │       │   │       └── lookups.tab_i.len
+│   │   │       │   └── last-build.bin
+│   │   │       ├── classpath-snapshot
+│   │   │       │   └── shrunk-classpath-snapshot.bin
+│   │   │       └── local-state
+│   │   │           └── build-history.bin
+│   │   ├── outputs
+│   │   │   ├── apk
+│   │   │   │   └── debug
+│   │   │   │       ├── app-debug.apk
+│   │   │   │       └── output-metadata.json
+│   │   │   ├── flutter-apk
+│   │   │   │   ├── app-debug.apk
+│   │   │   │   └── app-debug.apk.sha1
+│   │   │   └── logs
+│   │   │       └── manifest-merger-debug-report.txt
+│   │   └── tmp
+│   │       ├── compileDebugJavaWithJavac
+│   │       │   └── previous-compilation-data.bin
+│   │       ├── kotlin-classes
+│   │       │   └── debug
+│   │       │       ├── com
+│   │       │       │   └── example
+│   │       │       │       └── calimiro_app
+│   │       │       │           └── MainActivity.class
+│   │       │       └── META-INF
+│   │       │           └── app_debug.kotlin_module
+│   │       └── packJniLibsflutterBuildDebug
+│   │           └── MANIFEST.MF
+│   ├── camera_android
+│   │   ├── .transforms
+│   │   │   └── 4d284678f6e4fdffcd7f7a935e1cfa3f
+│   │   │       ├── transformed
+│   │   │       │   └── debug
+│   │   │       │       ├── io
+│   │   │       │       │   └── flutter
+│   │   │       │       │       └── plugins
+│   │   │       │       │           └── camera
+│   │   │       │       │               ├── features
+│   │   │       │       │               │   ├── autofocus
+│   │   │       │       │               │   │   ├── AutoFocusFeature$1.dex
+│   │   │       │       │               │   │   ├── AutoFocusFeature.dex
+│   │   │       │       │               │   │   └── FocusMode.dex
+│   │   │       │       │               │   ├── exposurelock
+│   │   │       │       │               │   │   ├── ExposureLockFeature.dex
+│   │   │       │       │               │   │   └── ExposureMode.dex
+│   │   │       │       │               │   ├── exposureoffset
+│   │   │       │       │               │   │   └── ExposureOffsetFeature.dex
+│   │   │       │       │               │   ├── exposurepoint
+│   │   │       │       │               │   │   └── ExposurePointFeature.dex
+│   │   │       │       │               │   ├── flash
+│   │   │       │       │               │   │   ├── FlashFeature$1.dex
+│   │   │       │       │               │   │   ├── FlashFeature.dex
+│   │   │       │       │               │   │   └── FlashMode.dex
+│   │   │       │       │               │   ├── focuspoint
+│   │   │       │       │               │   │   └── FocusPointFeature.dex
+│   │   │       │       │               │   ├── fpsrange
+│   │   │       │       │               │   │   └── FpsRangeFeature.dex
+│   │   │       │       │               │   ├── noisereduction
+│   │   │       │       │               │   │   ├── NoiseReductionFeature.dex
+│   │   │       │       │               │   │   └── NoiseReductionMode.dex
+│   │   │       │       │               │   ├── resolution
+│   │   │       │       │               │   │   ├── ResolutionFeature$1.dex
+│   │   │       │       │               │   │   ├── ResolutionFeature.dex
+│   │   │       │       │               │   │   └── ResolutionPreset.dex
+│   │   │       │       │               │   ├── sensororientation
+│   │   │       │       │               │   │   ├── DeviceOrientationManager$1.dex
+│   │   │       │       │               │   │   ├── DeviceOrientationManager$2.dex
+│   │   │       │       │               │   │   ├── DeviceOrientationManager.dex
+│   │   │       │       │               │   │   └── SensorOrientationFeature.dex
+│   │   │       │       │               │   ├── zoomlevel
+│   │   │       │       │               │   │   ├── ZoomLevelFeature.dex
+│   │   │       │       │               │   │   └── ZoomUtils.dex
+│   │   │       │       │               │   ├── CameraFeature.dex
+│   │   │       │       │               │   ├── CameraFeatureFactory.dex
+│   │   │       │       │               │   ├── CameraFeatureFactoryImpl.dex
+│   │   │       │       │               │   ├── CameraFeatures.dex
+│   │   │       │       │               │   └── Point.dex
+│   │   │       │       │               ├── media
+│   │   │       │       │               │   ├── ImageStreamReader.dex
+│   │   │       │       │               │   ├── ImageStreamReaderUtils.dex
+│   │   │       │       │               │   ├── MediaRecorderBuilder$MediaRecorderFactory.dex
+│   │   │       │       │               │   ├── MediaRecorderBuilder$RecordingParameters.dex
+│   │   │       │       │               │   └── MediaRecorderBuilder.dex
+│   │   │       │       │               ├── types
+│   │   │       │       │               │   ├── CameraCaptureProperties.dex
+│   │   │       │       │               │   ├── CaptureTimeoutsWrapper.dex
+│   │   │       │       │               │   ├── ExposureMode.dex
+│   │   │       │       │               │   ├── FlashMode.dex
+│   │   │       │       │               │   ├── FocusMode.dex
+│   │   │       │       │               │   ├── ResolutionPreset.dex
+│   │   │       │       │               │   └── Timeout.dex
+│   │   │       │       │               ├── BuildConfig.dex
+│   │   │       │       │               ├── Camera$1.dex
+│   │   │       │       │               ├── Camera$2.dex
+│   │   │       │       │               ├── Camera$3.dex
+│   │   │       │       │               ├── Camera$4.dex
+│   │   │       │       │               ├── Camera$5.dex
+│   │   │       │       │               ├── Camera$6.dex
+│   │   │       │       │               ├── Camera$7.dex
+│   │   │       │       │               ├── Camera$DefaultCameraDeviceWrapper.dex
+│   │   │       │       │               ├── Camera$HandlerFactory.dex
+│   │   │       │       │               ├── Camera$HandlerThreadFactory.dex
+│   │   │       │       │               ├── Camera$VideoCaptureSettings.dex
+│   │   │       │       │               ├── Camera.dex
+│   │   │       │       │               ├── CameraApiImpl.dex
+│   │   │       │       │               ├── CameraCaptureCallback$1.dex
+│   │   │       │       │               ├── CameraCaptureCallback$CameraCaptureStateListener.dex
+│   │   │       │       │               ├── CameraCaptureCallback.dex
+│   │   │       │       │               ├── CameraDeviceWrapper.dex
+│   │   │       │       │               ├── CameraPermissions$CameraRequestPermissionsListener.dex
+│   │   │       │       │               ├── CameraPermissions$PermissionsRegistry.dex
+│   │   │       │       │               ├── CameraPermissions$ResultCallback.dex
+│   │   │       │       │               ├── CameraPermissions.dex
+│   │   │       │       │               ├── CameraPlugin.dex
+│   │   │       │       │               ├── CameraProperties.dex
+│   │   │       │       │               ├── CameraPropertiesImpl.dex
+│   │   │       │       │               ├── CameraRegionUtils$1.dex
+│   │   │       │       │               ├── CameraRegionUtils$MeteringRectangleFactory.dex
+│   │   │       │       │               ├── CameraRegionUtils$SizeFactory.dex
+│   │   │       │       │               ├── CameraRegionUtils.dex
+│   │   │       │       │               ├── CameraState.dex
+│   │   │       │       │               ├── CameraUtils$1.dex
+│   │   │       │       │               ├── CameraUtils.dex
+│   │   │       │       │               ├── DartMessenger.dex
+│   │   │       │       │               ├── DeviceInfo.dex
+│   │   │       │       │               ├── ErrorCallback.dex
+│   │   │       │       │               ├── ImageSaver$Callback.dex
+│   │   │       │       │               ├── ImageSaver$FileOutputStreamFactory.dex
+│   │   │       │       │               ├── ImageSaver.dex
+│   │   │       │       │               ├── Messages$CameraApi$1.dex
+│   │   │       │       │               ├── Messages$CameraApi$2.dex
+│   │   │       │       │               ├── Messages$CameraApi$3.dex
+│   │   │       │       │               ├── Messages$CameraApi$4.dex
+│   │   │       │       │               ├── Messages$CameraApi$5.dex
+│   │   │       │       │               ├── Messages$CameraApi$6.dex
+│   │   │       │       │               ├── Messages$CameraApi$7.dex
+│   │   │       │       │               ├── Messages$CameraApi$8.dex
+│   │   │       │       │               ├── Messages$CameraApi.dex
+│   │   │       │       │               ├── Messages$CameraEventApi.dex
+│   │   │       │       │               ├── Messages$CameraGlobalEventApi.dex
+│   │   │       │       │               ├── Messages$CanIgnoreReturnValue.dex
+│   │   │       │       │               ├── Messages$FlutterError.dex
+│   │   │       │       │               ├── Messages$NullableResult.dex
+│   │   │       │       │               ├── Messages$PigeonCodec.dex
+│   │   │       │       │               ├── Messages$PlatformCameraDescription$Builder.dex
+│   │   │       │       │               ├── Messages$PlatformCameraDescription.dex
+│   │   │       │       │               ├── Messages$PlatformCameraLensDirection.dex
+│   │   │       │       │               ├── Messages$PlatformCameraState$Builder.dex
+│   │   │       │       │               ├── Messages$PlatformCameraState.dex
+│   │   │       │       │               ├── Messages$PlatformDeviceOrientation.dex
+│   │   │       │       │               ├── Messages$PlatformExposureMode.dex
+│   │   │       │       │               ├── Messages$PlatformFlashMode.dex
+│   │   │       │       │               ├── Messages$PlatformFocusMode.dex
+│   │   │       │       │               ├── Messages$PlatformImageFormatGroup.dex
+│   │   │       │       │               ├── Messages$PlatformMediaSettings$Builder.dex
+│   │   │       │       │               ├── Messages$PlatformMediaSettings.dex
+│   │   │       │       │               ├── Messages$PlatformPoint$Builder.dex
+│   │   │       │       │               ├── Messages$PlatformPoint.dex
+│   │   │       │       │               ├── Messages$PlatformResolutionPreset.dex
+│   │   │       │       │               ├── Messages$PlatformSize$Builder.dex
+│   │   │       │       │               ├── Messages$PlatformSize.dex
+│   │   │       │       │               ├── Messages$Result.dex
+│   │   │       │       │               ├── Messages$VoidResult.dex
+│   │   │       │       │               ├── Messages.dex
+│   │   │       │       │               ├── NoOpVoidResult.dex
+│   │   │       │       │               ├── SdkCapabilityChecker.dex
+│   │   │       │       │               ├── VideoRenderer$1.dex
+│   │   │       │       │               ├── VideoRenderer$2.dex
+│   │   │       │       │               └── VideoRenderer.dex
+│   │   │       │       └── desugar_graph.bin
+│   │   │       └── results.bin
+│   │   ├── generated
+│   │   │   ├── ap_generated_sources
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── res
+│   │   │   │   ├── pngs
+│   │   │   │   │   └── debug
+│   │   │   │   └── resValues
+│   │   │   │       └── debug
+│   │   │   └── source
+│   │   │       └── buildConfig
+│   │   │           └── debug
+│   │   │               └── io
+│   │   │                   └── flutter
+│   │   │                       └── plugins
+│   │   │                           └── camera
+│   │   │                               └── BuildConfig.java
+│   │   ├── intermediates
+│   │   │   ├── aapt_friendly_merged_manifests
+│   │   │   │   └── debug
+│   │   │   │       └── aapt
+│   │   │   │           ├── AndroidManifest.xml
+│   │   │   │           └── output-metadata.json
+│   │   │   ├── aar_libs_directory
+│   │   │   │   └── debug
+│   │   │   │       └── libs
+│   │   │   ├── aar_main_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   ├── aar_metadata
+│   │   │   │   └── debug
+│   │   │   │       └── aar-metadata.properties
+│   │   │   ├── annotation_processor_list
+│   │   │   │   └── debug
+│   │   │   │       └── annotationProcessors.json
+│   │   │   ├── annotations_typedef_file
+│   │   │   │   └── debug
+│   │   │   │       └── typedefs.txt
+│   │   │   ├── annotations_zip
+│   │   │   │   └── debug
+│   │   │   ├── compile_library_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   ├── compile_r_class_jar
+│   │   │   │   └── debug
+│   │   │   │       └── R.jar
+│   │   │   ├── compile_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R.txt
+│   │   │   ├── compiled_local_resources
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── incremental
+│   │   │   │   ├── debug
+│   │   │   │   │   └── packageDebugResources
+│   │   │   │   │       ├── merged.dir
+│   │   │   │   │       ├── stripped.dir
+│   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │       └── merger.xml
+│   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   ├── zip-cache
+│   │   │   │   │   └── merge-state
+│   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   └── packageDebugAssets
+│   │   │   │       └── merger.xml
+│   │   │   ├── javac
+│   │   │   │   └── debug
+│   │   │   │       └── classes
+│   │   │   │           └── io
+│   │   │   │               └── flutter
+│   │   │   │                   └── plugins
+│   │   │   │                       └── camera
+│   │   │   │                           ├── features
+│   │   │   │                           │   ├── autofocus
+│   │   │   │                           │   │   ├── AutoFocusFeature$1.class
+│   │   │   │                           │   │   ├── AutoFocusFeature.class
+│   │   │   │                           │   │   └── FocusMode.class
+│   │   │   │                           │   ├── exposurelock
+│   │   │   │                           │   │   ├── ExposureLockFeature.class
+│   │   │   │                           │   │   └── ExposureMode.class
+│   │   │   │                           │   ├── exposureoffset
+│   │   │   │                           │   │   └── ExposureOffsetFeature.class
+│   │   │   │                           │   ├── exposurepoint
+│   │   │   │                           │   │   └── ExposurePointFeature.class
+│   │   │   │                           │   ├── flash
+│   │   │   │                           │   │   ├── FlashFeature$1.class
+│   │   │   │                           │   │   ├── FlashFeature.class
+│   │   │   │                           │   │   └── FlashMode.class
+│   │   │   │                           │   ├── focuspoint
+│   │   │   │                           │   │   └── FocusPointFeature.class
+│   │   │   │                           │   ├── fpsrange
+│   │   │   │                           │   │   └── FpsRangeFeature.class
+│   │   │   │                           │   ├── noisereduction
+│   │   │   │                           │   │   ├── NoiseReductionFeature.class
+│   │   │   │                           │   │   └── NoiseReductionMode.class
+│   │   │   │                           │   ├── resolution
+│   │   │   │                           │   │   ├── ResolutionFeature$1.class
+│   │   │   │                           │   │   ├── ResolutionFeature.class
+│   │   │   │                           │   │   └── ResolutionPreset.class
+│   │   │   │                           │   ├── sensororientation
+│   │   │   │                           │   │   ├── DeviceOrientationManager$1.class
+│   │   │   │                           │   │   ├── DeviceOrientationManager$2.class
+│   │   │   │                           │   │   ├── DeviceOrientationManager.class
+│   │   │   │                           │   │   └── SensorOrientationFeature.class
+│   │   │   │                           │   ├── zoomlevel
+│   │   │   │                           │   │   ├── ZoomLevelFeature.class
+│   │   │   │                           │   │   └── ZoomUtils.class
+│   │   │   │                           │   ├── CameraFeature.class
+│   │   │   │                           │   ├── CameraFeatureFactory.class
+│   │   │   │                           │   ├── CameraFeatureFactoryImpl.class
+│   │   │   │                           │   ├── CameraFeatures.class
+│   │   │   │                           │   └── Point.class
+│   │   │   │                           ├── media
+│   │   │   │                           │   ├── ImageStreamReader.class
+│   │   │   │                           │   ├── ImageStreamReaderUtils.class
+│   │   │   │                           │   ├── MediaRecorderBuilder$MediaRecorderFactory.class
+│   │   │   │                           │   ├── MediaRecorderBuilder$RecordingParameters.class
+│   │   │   │                           │   └── MediaRecorderBuilder.class
+│   │   │   │                           ├── types
+│   │   │   │                           │   ├── CameraCaptureProperties.class
+│   │   │   │                           │   ├── CaptureTimeoutsWrapper.class
+│   │   │   │                           │   ├── ExposureMode.class
+│   │   │   │                           │   ├── FlashMode.class
+│   │   │   │                           │   ├── FocusMode.class
+│   │   │   │                           │   ├── ResolutionPreset.class
+│   │   │   │                           │   └── Timeout.class
+│   │   │   │                           ├── BuildConfig.class
+│   │   │   │                           ├── Camera$1.class
+│   │   │   │                           ├── Camera$2.class
+│   │   │   │                           ├── Camera$3.class
+│   │   │   │                           ├── Camera$4.class
+│   │   │   │                           ├── Camera$5.class
+│   │   │   │                           ├── Camera$6.class
+│   │   │   │                           ├── Camera$7.class
+│   │   │   │                           ├── Camera$DefaultCameraDeviceWrapper.class
+│   │   │   │                           ├── Camera$HandlerFactory.class
+│   │   │   │                           ├── Camera$HandlerThreadFactory.class
+│   │   │   │                           ├── Camera$VideoCaptureSettings.class
+│   │   │   │                           ├── Camera.class
+│   │   │   │                           ├── CameraApiImpl.class
+│   │   │   │                           ├── CameraCaptureCallback$1.class
+│   │   │   │                           ├── CameraCaptureCallback$CameraCaptureStateListener.class
+│   │   │   │                           ├── CameraCaptureCallback.class
+│   │   │   │                           ├── CameraDeviceWrapper.class
+│   │   │   │                           ├── CameraPermissions$CameraRequestPermissionsListener.class
+│   │   │   │                           ├── CameraPermissions$PermissionsRegistry.class
+│   │   │   │                           ├── CameraPermissions$ResultCallback.class
+│   │   │   │                           ├── CameraPermissions.class
+│   │   │   │                           ├── CameraPlugin.class
+│   │   │   │                           ├── CameraProperties.class
+│   │   │   │                           ├── CameraPropertiesImpl.class
+│   │   │   │                           ├── CameraRegionUtils$1.class
+│   │   │   │                           ├── CameraRegionUtils$MeteringRectangleFactory.class
+│   │   │   │                           ├── CameraRegionUtils$SizeFactory.class
+│   │   │   │                           ├── CameraRegionUtils.class
+│   │   │   │                           ├── CameraState.class
+│   │   │   │                           ├── CameraUtils$1.class
+│   │   │   │                           ├── CameraUtils.class
+│   │   │   │                           ├── DartMessenger.class
+│   │   │   │                           ├── DeviceInfo.class
+│   │   │   │                           ├── ErrorCallback.class
+│   │   │   │                           ├── ImageSaver$Callback.class
+│   │   │   │                           ├── ImageSaver$FileOutputStreamFactory.class
+│   │   │   │                           ├── ImageSaver.class
+│   │   │   │                           ├── Messages$CameraApi$1.class
+│   │   │   │                           ├── Messages$CameraApi$2.class
+│   │   │   │                           ├── Messages$CameraApi$3.class
+│   │   │   │                           ├── Messages$CameraApi$4.class
+│   │   │   │                           ├── Messages$CameraApi$5.class
+│   │   │   │                           ├── Messages$CameraApi$6.class
+│   │   │   │                           ├── Messages$CameraApi$7.class
+│   │   │   │                           ├── Messages$CameraApi$8.class
+│   │   │   │                           ├── Messages$CameraApi.class
+│   │   │   │                           ├── Messages$CameraEventApi.class
+│   │   │   │                           ├── Messages$CameraGlobalEventApi.class
+│   │   │   │                           ├── Messages$CanIgnoreReturnValue.class
+│   │   │   │                           ├── Messages$FlutterError.class
+│   │   │   │                           ├── Messages$NullableResult.class
+│   │   │   │                           ├── Messages$PigeonCodec.class
+│   │   │   │                           ├── Messages$PlatformCameraDescription$Builder.class
+│   │   │   │                           ├── Messages$PlatformCameraDescription.class
+│   │   │   │                           ├── Messages$PlatformCameraLensDirection.class
+│   │   │   │                           ├── Messages$PlatformCameraState$Builder.class
+│   │   │   │                           ├── Messages$PlatformCameraState.class
+│   │   │   │                           ├── Messages$PlatformDeviceOrientation.class
+│   │   │   │                           ├── Messages$PlatformExposureMode.class
+│   │   │   │                           ├── Messages$PlatformFlashMode.class
+│   │   │   │                           ├── Messages$PlatformFocusMode.class
+│   │   │   │                           ├── Messages$PlatformImageFormatGroup.class
+│   │   │   │                           ├── Messages$PlatformMediaSettings$Builder.class
+│   │   │   │                           ├── Messages$PlatformMediaSettings.class
+│   │   │   │                           ├── Messages$PlatformPoint$Builder.class
+│   │   │   │                           ├── Messages$PlatformPoint.class
+│   │   │   │                           ├── Messages$PlatformResolutionPreset.class
+│   │   │   │                           ├── Messages$PlatformSize$Builder.class
+│   │   │   │                           ├── Messages$PlatformSize.class
+│   │   │   │                           ├── Messages$Result.class
+│   │   │   │                           ├── Messages$VoidResult.class
+│   │   │   │                           ├── Messages.class
+│   │   │   │                           ├── NoOpVoidResult.class
+│   │   │   │                           ├── SdkCapabilityChecker.class
+│   │   │   │                           ├── VideoRenderer$1.class
+│   │   │   │                           ├── VideoRenderer$2.class
+│   │   │   │                           └── VideoRenderer.class
+│   │   │   ├── library_and_local_jars_jni
+│   │   │   │   └── debug
+│   │   │   │       └── jni
+│   │   │   ├── library_assets
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── library_jni
+│   │   │   │   └── debug
+│   │   │   │       └── jni
+│   │   │   ├── local_only_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R-def.txt
+│   │   │   ├── manifest_merge_blame_file
+│   │   │   │   └── debug
+│   │   │   │       └── manifest-merger-blame-debug-report.txt
+│   │   │   ├── merged_java_res
+│   │   │   │   └── debug
+│   │   │   │       └── feature-camera_android.jar
+│   │   │   ├── merged_jni_libs
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── merged_manifest
+│   │   │   │   └── debug
+│   │   │   │       └── AndroidManifest.xml
+│   │   │   ├── merged_shaders
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── navigation_json
+│   │   │   │   └── debug
+│   │   │   │       └── navigation.json
+│   │   │   ├── packaged_res
+│   │   │   │   └── debug
+│   │   │   ├── public_res
+│   │   │   │   └── debug
+│   │   │   ├── runtime_library_classes_dir
+│   │   │   │   └── debug
+│   │   │   │       └── io
+│   │   │   │           └── flutter
+│   │   │   │               └── plugins
+│   │   │   │                   └── camera
+│   │   │   │                       ├── features
+│   │   │   │                       │   ├── autofocus
+│   │   │   │                       │   │   ├── AutoFocusFeature$1.class
+│   │   │   │                       │   │   ├── AutoFocusFeature.class
+│   │   │   │                       │   │   └── FocusMode.class
+│   │   │   │                       │   ├── exposurelock
+│   │   │   │                       │   │   ├── ExposureLockFeature.class
+│   │   │   │                       │   │   └── ExposureMode.class
+│   │   │   │                       │   ├── exposureoffset
+│   │   │   │                       │   │   └── ExposureOffsetFeature.class
+│   │   │   │                       │   ├── exposurepoint
+│   │   │   │                       │   │   └── ExposurePointFeature.class
+│   │   │   │                       │   ├── flash
+│   │   │   │                       │   │   ├── FlashFeature$1.class
+│   │   │   │                       │   │   ├── FlashFeature.class
+│   │   │   │                       │   │   └── FlashMode.class
+│   │   │   │                       │   ├── focuspoint
+│   │   │   │                       │   │   └── FocusPointFeature.class
+│   │   │   │                       │   ├── fpsrange
+│   │   │   │                       │   │   └── FpsRangeFeature.class
+│   │   │   │                       │   ├── noisereduction
+│   │   │   │                       │   │   ├── NoiseReductionFeature.class
+│   │   │   │                       │   │   └── NoiseReductionMode.class
+│   │   │   │                       │   ├── resolution
+│   │   │   │                       │   │   ├── ResolutionFeature$1.class
+│   │   │   │                       │   │   ├── ResolutionFeature.class
+│   │   │   │                       │   │   └── ResolutionPreset.class
+│   │   │   │                       │   ├── sensororientation
+│   │   │   │                       │   │   ├── DeviceOrientationManager$1.class
+│   │   │   │                       │   │   ├── DeviceOrientationManager$2.class
+│   │   │   │                       │   │   ├── DeviceOrientationManager.class
+│   │   │   │                       │   │   └── SensorOrientationFeature.class
+│   │   │   │                       │   ├── zoomlevel
+│   │   │   │                       │   │   ├── ZoomLevelFeature.class
+│   │   │   │                       │   │   └── ZoomUtils.class
+│   │   │   │                       │   ├── CameraFeature.class
+│   │   │   │                       │   ├── CameraFeatureFactory.class
+│   │   │   │                       │   ├── CameraFeatureFactoryImpl.class
+│   │   │   │                       │   ├── CameraFeatures.class
+│   │   │   │                       │   └── Point.class
+│   │   │   │                       ├── media
+│   │   │   │                       │   ├── ImageStreamReader.class
+│   │   │   │                       │   ├── ImageStreamReaderUtils.class
+│   │   │   │                       │   ├── MediaRecorderBuilder$MediaRecorderFactory.class
+│   │   │   │                       │   ├── MediaRecorderBuilder$RecordingParameters.class
+│   │   │   │                       │   └── MediaRecorderBuilder.class
+│   │   │   │                       ├── types
+│   │   │   │                       │   ├── CameraCaptureProperties.class
+│   │   │   │                       │   ├── CaptureTimeoutsWrapper.class
+│   │   │   │                       │   ├── ExposureMode.class
+│   │   │   │                       │   ├── FlashMode.class
+│   │   │   │                       │   ├── FocusMode.class
+│   │   │   │                       │   ├── ResolutionPreset.class
+│   │   │   │                       │   └── Timeout.class
+│   │   │   │                       ├── BuildConfig.class
+│   │   │   │                       ├── Camera$1.class
+│   │   │   │                       ├── Camera$2.class
+│   │   │   │                       ├── Camera$3.class
+│   │   │   │                       ├── Camera$4.class
+│   │   │   │                       ├── Camera$5.class
+│   │   │   │                       ├── Camera$6.class
+│   │   │   │                       ├── Camera$7.class
+│   │   │   │                       ├── Camera$DefaultCameraDeviceWrapper.class
+│   │   │   │                       ├── Camera$HandlerFactory.class
+│   │   │   │                       ├── Camera$HandlerThreadFactory.class
+│   │   │   │                       ├── Camera$VideoCaptureSettings.class
+│   │   │   │                       ├── Camera.class
+│   │   │   │                       ├── CameraApiImpl.class
+│   │   │   │                       ├── CameraCaptureCallback$1.class
+│   │   │   │                       ├── CameraCaptureCallback$CameraCaptureStateListener.class
+│   │   │   │                       ├── CameraCaptureCallback.class
+│   │   │   │                       ├── CameraDeviceWrapper.class
+│   │   │   │                       ├── CameraPermissions$CameraRequestPermissionsListener.class
+│   │   │   │                       ├── CameraPermissions$PermissionsRegistry.class
+│   │   │   │                       ├── CameraPermissions$ResultCallback.class
+│   │   │   │                       ├── CameraPermissions.class
+│   │   │   │                       ├── CameraPlugin.class
+│   │   │   │                       ├── CameraProperties.class
+│   │   │   │                       ├── CameraPropertiesImpl.class
+│   │   │   │                       ├── CameraRegionUtils$1.class
+│   │   │   │                       ├── CameraRegionUtils$MeteringRectangleFactory.class
+│   │   │   │                       ├── CameraRegionUtils$SizeFactory.class
+│   │   │   │                       ├── CameraRegionUtils.class
+│   │   │   │                       ├── CameraState.class
+│   │   │   │                       ├── CameraUtils$1.class
+│   │   │   │                       ├── CameraUtils.class
+│   │   │   │                       ├── DartMessenger.class
+│   │   │   │                       ├── DeviceInfo.class
+│   │   │   │                       ├── ErrorCallback.class
+│   │   │   │                       ├── ImageSaver$Callback.class
+│   │   │   │                       ├── ImageSaver$FileOutputStreamFactory.class
+│   │   │   │                       ├── ImageSaver.class
+│   │   │   │                       ├── Messages$CameraApi$1.class
+│   │   │   │                       ├── Messages$CameraApi$2.class
+│   │   │   │                       ├── Messages$CameraApi$3.class
+│   │   │   │                       ├── Messages$CameraApi$4.class
+│   │   │   │                       ├── Messages$CameraApi$5.class
+│   │   │   │                       ├── Messages$CameraApi$6.class
+│   │   │   │                       ├── Messages$CameraApi$7.class
+│   │   │   │                       ├── Messages$CameraApi$8.class
+│   │   │   │                       ├── Messages$CameraApi.class
+│   │   │   │                       ├── Messages$CameraEventApi.class
+│   │   │   │                       ├── Messages$CameraGlobalEventApi.class
+│   │   │   │                       ├── Messages$CanIgnoreReturnValue.class
+│   │   │   │                       ├── Messages$FlutterError.class
+│   │   │   │                       ├── Messages$NullableResult.class
+│   │   │   │                       ├── Messages$PigeonCodec.class
+│   │   │   │                       ├── Messages$PlatformCameraDescription$Builder.class
+│   │   │   │                       ├── Messages$PlatformCameraDescription.class
+│   │   │   │                       ├── Messages$PlatformCameraLensDirection.class
+│   │   │   │                       ├── Messages$PlatformCameraState$Builder.class
+│   │   │   │                       ├── Messages$PlatformCameraState.class
+│   │   │   │                       ├── Messages$PlatformDeviceOrientation.class
+│   │   │   │                       ├── Messages$PlatformExposureMode.class
+│   │   │   │                       ├── Messages$PlatformFlashMode.class
+│   │   │   │                       ├── Messages$PlatformFocusMode.class
+│   │   │   │                       ├── Messages$PlatformImageFormatGroup.class
+│   │   │   │                       ├── Messages$PlatformMediaSettings$Builder.class
+│   │   │   │                       ├── Messages$PlatformMediaSettings.class
+│   │   │   │                       ├── Messages$PlatformPoint$Builder.class
+│   │   │   │                       ├── Messages$PlatformPoint.class
+│   │   │   │                       ├── Messages$PlatformResolutionPreset.class
+│   │   │   │                       ├── Messages$PlatformSize$Builder.class
+│   │   │   │                       ├── Messages$PlatformSize.class
+│   │   │   │                       ├── Messages$Result.class
+│   │   │   │                       ├── Messages$VoidResult.class
+│   │   │   │                       ├── Messages.class
+│   │   │   │                       ├── NoOpVoidResult.class
+│   │   │   │                       ├── SdkCapabilityChecker.class
+│   │   │   │                       ├── VideoRenderer$1.class
+│   │   │   │                       ├── VideoRenderer$2.class
+│   │   │   │                       └── VideoRenderer.class
+│   │   │   ├── runtime_library_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   └── symbol_list_with_package_name
+│   │   │       └── debug
+│   │   │           └── package-aware-r.txt
+│   │   ├── outputs
+│   │   │   ├── aar
+│   │   │   │   └── camera_android-debug.aar
+│   │   │   └── logs
+│   │   │       └── manifest-merger-debug-report.txt
+│   │   └── tmp
+│   │       └── compileDebugJavaWithJavac
+│   │           └── previous-compilation-data.bin
+│   ├── flutter_plugin_android_lifecycle
+│   │   ├── .transforms
+│   │   │   └── d221aa04cd1712c43a5a566ba79680b2
+│   │   │       ├── transformed
+│   │   │       │   └── debug
+│   │   │       │       ├── io
+│   │   │       │       │   └── flutter
+│   │   │       │       │       ├── embedding
+│   │   │       │       │       │   └── engine
+│   │   │       │       │       │       └── plugins
+│   │   │       │       │       │           └── lifecycle
+│   │   │       │       │       │               └── FlutterLifecycleAdapter.dex
+│   │   │       │       │       └── plugins
+│   │   │       │       │           └── flutter_plugin_android_lifecycle
+│   │   │       │       │               └── FlutterAndroidLifecyclePlugin.dex
+│   │   │       │       └── desugar_graph.bin
+│   │   │       └── results.bin
+│   │   ├── generated
+│   │   │   ├── ap_generated_sources
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   └── res
+│   │   │       ├── pngs
+│   │   │       │   └── debug
+│   │   │       └── resValues
+│   │   │           └── debug
+│   │   ├── intermediates
+│   │   │   ├── aapt_friendly_merged_manifests
+│   │   │   │   └── debug
+│   │   │   │       └── aapt
+│   │   │   │           ├── AndroidManifest.xml
+│   │   │   │           └── output-metadata.json
+│   │   │   ├── aar_libs_directory
+│   │   │   │   └── debug
+│   │   │   │       └── libs
+│   │   │   ├── aar_main_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   ├── aar_metadata
+│   │   │   │   └── debug
+│   │   │   │       └── aar-metadata.properties
+│   │   │   ├── annotation_processor_list
+│   │   │   │   └── debug
+│   │   │   │       └── annotationProcessors.json
+│   │   │   ├── annotations_typedef_file
+│   │   │   │   └── debug
+│   │   │   │       └── typedefs.txt
+│   │   │   ├── annotations_zip
+│   │   │   │   └── debug
+│   │   │   ├── compile_library_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   ├── compile_r_class_jar
+│   │   │   │   └── debug
+│   │   │   │       └── R.jar
+│   │   │   ├── compile_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R.txt
+│   │   │   ├── compiled_local_resources
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── incremental
+│   │   │   │   ├── debug
+│   │   │   │   │   └── packageDebugResources
+│   │   │   │   │       ├── merged.dir
+│   │   │   │   │       ├── stripped.dir
+│   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │       └── merger.xml
+│   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   ├── zip-cache
+│   │   │   │   │   └── merge-state
+│   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   └── packageDebugAssets
+│   │   │   │       └── merger.xml
+│   │   │   ├── javac
+│   │   │   │   └── debug
+│   │   │   │       └── classes
+│   │   │   │           └── io
+│   │   │   │               └── flutter
+│   │   │   │                   ├── embedding
+│   │   │   │                   │   └── engine
+│   │   │   │                   │       └── plugins
+│   │   │   │                   │           └── lifecycle
+│   │   │   │                   │               └── FlutterLifecycleAdapter.class
+│   │   │   │                   └── plugins
+│   │   │   │                       └── flutter_plugin_android_lifecycle
+│   │   │   │                           └── FlutterAndroidLifecyclePlugin.class
+│   │   │   ├── library_and_local_jars_jni
+│   │   │   │   └── debug
+│   │   │   │       └── jni
+│   │   │   ├── library_assets
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── library_jni
+│   │   │   │   └── debug
+│   │   │   │       └── jni
+│   │   │   ├── local_only_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R-def.txt
+│   │   │   ├── manifest_merge_blame_file
+│   │   │   │   └── debug
+│   │   │   │       └── manifest-merger-blame-debug-report.txt
+│   │   │   ├── merged_consumer_proguard_file
+│   │   │   │   └── debug
+│   │   │   │       └── proguard.txt
+│   │   │   ├── merged_java_res
+│   │   │   │   └── debug
+│   │   │   │       └── feature-flutter_plugin_android_lifecycle.jar
+│   │   │   ├── merged_jni_libs
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── merged_manifest
+│   │   │   │   └── debug
+│   │   │   │       └── AndroidManifest.xml
+│   │   │   ├── merged_shaders
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── navigation_json
+│   │   │   │   └── debug
+│   │   │   │       └── navigation.json
+│   │   │   ├── packaged_res
+│   │   │   │   └── debug
+│   │   │   ├── public_res
+│   │   │   │   └── debug
+│   │   │   ├── runtime_library_classes_dir
+│   │   │   │   └── debug
+│   │   │   │       └── io
+│   │   │   │           └── flutter
+│   │   │   │               ├── embedding
+│   │   │   │               │   └── engine
+│   │   │   │               │       └── plugins
+│   │   │   │               │           └── lifecycle
+│   │   │   │               │               └── FlutterLifecycleAdapter.class
+│   │   │   │               └── plugins
+│   │   │   │                   └── flutter_plugin_android_lifecycle
+│   │   │   │                       └── FlutterAndroidLifecyclePlugin.class
+│   │   │   ├── runtime_library_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   └── symbol_list_with_package_name
+│   │   │       └── debug
+│   │   │           └── package-aware-r.txt
+│   │   ├── outputs
+│   │   │   ├── aar
+│   │   │   │   └── flutter_plugin_android_lifecycle-debug.aar
+│   │   │   └── logs
+│   │   │       └── manifest-merger-debug-report.txt
+│   │   └── tmp
+│   │       └── compileDebugJavaWithJavac
+│   │           └── previous-compilation-data.bin
+│   ├── permission_handler_android
+│   │   ├── .transforms
+│   │   │   └── e895aba6bf3a6023d70b92dc98b60963
+│   │   │       ├── transformed
+│   │   │       │   └── debug
+│   │   │       │       ├── com
+│   │   │       │       │   └── baseflow
+│   │   │       │       │       └── permissionhandler
+│   │   │       │       │           ├── AppSettingsManager$OpenAppSettingsSuccessCallback.dex
+│   │   │       │       │           ├── AppSettingsManager.dex
+│   │   │       │       │           ├── ErrorCallback.dex
+│   │   │       │       │           ├── MethodCallHandlerImpl.dex
+│   │   │       │       │           ├── PermissionConstants$PermissionGroup.dex
+│   │   │       │       │           ├── PermissionConstants$PermissionStatus.dex
+│   │   │       │       │           ├── PermissionConstants$ServiceStatus.dex
+│   │   │       │       │           ├── PermissionConstants.dex
+│   │   │       │       │           ├── PermissionHandlerPlugin.dex
+│   │   │       │       │           ├── PermissionManager$CheckPermissionsSuccessCallback.dex
+│   │   │       │       │           ├── PermissionManager$RequestPermissionsSuccessCallback.dex
+│   │   │       │       │           ├── PermissionManager$ShouldShowRequestPermissionRationaleSuccessCallback.dex
+│   │   │       │       │           ├── PermissionManager.dex
+│   │   │       │       │           ├── PermissionUtils.dex
+│   │   │       │       │           ├── ServiceManager$SuccessCallback.dex
+│   │   │       │       │           └── ServiceManager.dex
+│   │   │       │       └── desugar_graph.bin
+│   │   │       └── results.bin
+│   │   ├── generated
+│   │   │   ├── ap_generated_sources
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   └── res
+│   │   │       ├── pngs
+│   │   │       │   └── debug
+│   │   │       └── resValues
+│   │   │           └── debug
+│   │   ├── intermediates
+│   │   │   ├── aapt_friendly_merged_manifests
+│   │   │   │   └── debug
+│   │   │   │       └── aapt
+│   │   │   │           ├── AndroidManifest.xml
+│   │   │   │           └── output-metadata.json
+│   │   │   ├── aar_libs_directory
+│   │   │   │   └── debug
+│   │   │   │       └── libs
+│   │   │   ├── aar_main_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   ├── aar_metadata
+│   │   │   │   └── debug
+│   │   │   │       └── aar-metadata.properties
+│   │   │   ├── annotation_processor_list
+│   │   │   │   └── debug
+│   │   │   │       └── annotationProcessors.json
+│   │   │   ├── annotations_typedef_file
+│   │   │   │   └── debug
+│   │   │   │       └── typedefs.txt
+│   │   │   ├── annotations_zip
+│   │   │   │   └── debug
+│   │   │   │       └── annotations.zip
+│   │   │   ├── compile_library_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   ├── compile_r_class_jar
+│   │   │   │   └── debug
+│   │   │   │       └── R.jar
+│   │   │   ├── compile_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R.txt
+│   │   │   ├── compiled_local_resources
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── incremental
+│   │   │   │   ├── debug
+│   │   │   │   │   └── packageDebugResources
+│   │   │   │   │       ├── merged.dir
+│   │   │   │   │       ├── stripped.dir
+│   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │       └── merger.xml
+│   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   ├── zip-cache
+│   │   │   │   │   └── merge-state
+│   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   └── packageDebugAssets
+│   │   │   │       └── merger.xml
+│   │   │   ├── javac
+│   │   │   │   └── debug
+│   │   │   │       └── classes
+│   │   │   │           └── com
+│   │   │   │               └── baseflow
+│   │   │   │                   └── permissionhandler
+│   │   │   │                       ├── AppSettingsManager$OpenAppSettingsSuccessCallback.class
+│   │   │   │                       ├── AppSettingsManager.class
+│   │   │   │                       ├── ErrorCallback.class
+│   │   │   │                       ├── MethodCallHandlerImpl.class
+│   │   │   │                       ├── PermissionConstants$PermissionGroup.class
+│   │   │   │                       ├── PermissionConstants$PermissionStatus.class
+│   │   │   │                       ├── PermissionConstants$ServiceStatus.class
+│   │   │   │                       ├── PermissionConstants.class
+│   │   │   │                       ├── PermissionHandlerPlugin.class
+│   │   │   │                       ├── PermissionManager$CheckPermissionsSuccessCallback.class
+│   │   │   │                       ├── PermissionManager$RequestPermissionsSuccessCallback.class
+│   │   │   │                       ├── PermissionManager$ShouldShowRequestPermissionRationaleSuccessCallback.class
+│   │   │   │                       ├── PermissionManager.class
+│   │   │   │                       ├── PermissionUtils.class
+│   │   │   │                       ├── ServiceManager$SuccessCallback.class
+│   │   │   │                       └── ServiceManager.class
+│   │   │   ├── library_and_local_jars_jni
+│   │   │   │   └── debug
+│   │   │   │       └── jni
+│   │   │   ├── library_assets
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── library_jni
+│   │   │   │   └── debug
+│   │   │   │       └── jni
+│   │   │   ├── local_only_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R-def.txt
+│   │   │   ├── manifest_merge_blame_file
+│   │   │   │   └── debug
+│   │   │   │       └── manifest-merger-blame-debug-report.txt
+│   │   │   ├── merged_java_res
+│   │   │   │   └── debug
+│   │   │   │       └── feature-permission_handler_android.jar
+│   │   │   ├── merged_jni_libs
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── merged_manifest
+│   │   │   │   └── debug
+│   │   │   │       └── AndroidManifest.xml
+│   │   │   ├── merged_shaders
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── navigation_json
+│   │   │   │   └── debug
+│   │   │   │       └── navigation.json
+│   │   │   ├── packaged_res
+│   │   │   │   └── debug
+│   │   │   ├── public_res
+│   │   │   │   └── debug
+│   │   │   ├── runtime_library_classes_dir
+│   │   │   │   └── debug
+│   │   │   │       └── com
+│   │   │   │           └── baseflow
+│   │   │   │               └── permissionhandler
+│   │   │   │                   ├── AppSettingsManager$OpenAppSettingsSuccessCallback.class
+│   │   │   │                   ├── AppSettingsManager.class
+│   │   │   │                   ├── ErrorCallback.class
+│   │   │   │                   ├── MethodCallHandlerImpl.class
+│   │   │   │                   ├── PermissionConstants$PermissionGroup.class
+│   │   │   │                   ├── PermissionConstants$PermissionStatus.class
+│   │   │   │                   ├── PermissionConstants$ServiceStatus.class
+│   │   │   │                   ├── PermissionConstants.class
+│   │   │   │                   ├── PermissionHandlerPlugin.class
+│   │   │   │                   ├── PermissionManager$CheckPermissionsSuccessCallback.class
+│   │   │   │                   ├── PermissionManager$RequestPermissionsSuccessCallback.class
+│   │   │   │                   ├── PermissionManager$ShouldShowRequestPermissionRationaleSuccessCallback.class
+│   │   │   │                   ├── PermissionManager.class
+│   │   │   │                   ├── PermissionUtils.class
+│   │   │   │                   ├── ServiceManager$SuccessCallback.class
+│   │   │   │                   └── ServiceManager.class
+│   │   │   ├── runtime_library_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   └── symbol_list_with_package_name
+│   │   │       └── debug
+│   │   │           └── package-aware-r.txt
+│   │   ├── outputs
+│   │   │   ├── aar
+│   │   │   │   └── permission_handler_android-debug.aar
+│   │   │   └── logs
+│   │   │       └── manifest-merger-debug-report.txt
+│   │   └── tmp
+│   │       └── compileDebugJavaWithJavac
+│   │           └── previous-compilation-data.bin
+│   ├── tflite_flutter
+│   │   ├── .transforms
+│   │   │   └── c6d84d90a8e56c3bc090e58e3ddd9582
+│   │   │       ├── transformed
+│   │   │       │   └── debug
+│   │   │       │       └── desugar_graph.bin
+│   │   │       └── results.bin
+│   │   ├── generated
+│   │   │   └── res
+│   │   │       ├── pngs
+│   │   │       │   └── debug
+│   │   │       └── resValues
+│   │   │           └── debug
+│   │   ├── intermediates
+│   │   │   ├── aapt_friendly_merged_manifests
+│   │   │   │   └── debug
+│   │   │   │       └── aapt
+│   │   │   │           ├── AndroidManifest.xml
+│   │   │   │           └── output-metadata.json
+│   │   │   ├── aar_libs_directory
+│   │   │   │   └── debug
+│   │   │   │       └── libs
+│   │   │   ├── aar_main_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   ├── aar_metadata
+│   │   │   │   └── debug
+│   │   │   │       └── aar-metadata.properties
+│   │   │   ├── annotation_processor_list
+│   │   │   │   └── debug
+│   │   │   │       └── annotationProcessors.json
+│   │   │   ├── annotations_typedef_file
+│   │   │   │   └── debug
+│   │   │   │       └── typedefs.txt
+│   │   │   ├── annotations_zip
+│   │   │   │   └── debug
+│   │   │   ├── compile_library_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   ├── compile_r_class_jar
+│   │   │   │   └── debug
+│   │   │   │       └── R.jar
+│   │   │   ├── compile_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R.txt
+│   │   │   ├── compiled_local_resources
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── data_binding_layout_info_type_package
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── incremental
+│   │   │   │   ├── debug
+│   │   │   │   │   └── packageDebugResources
+│   │   │   │   │       ├── merged.dir
+│   │   │   │   │       ├── stripped.dir
+│   │   │   │   │       ├── compile-file-map.properties
+│   │   │   │   │       └── merger.xml
+│   │   │   │   ├── debug-mergeJavaRes
+│   │   │   │   │   ├── zip-cache
+│   │   │   │   │   └── merge-state
+│   │   │   │   ├── mergeDebugJniLibFolders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   ├── mergeDebugShaders
+│   │   │   │   │   └── merger.xml
+│   │   │   │   └── packageDebugAssets
+│   │   │   │       └── merger.xml
+│   │   │   ├── library_and_local_jars_jni
+│   │   │   │   └── debug
+│   │   │   │       └── jni
+│   │   │   ├── library_assets
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── library_jni
+│   │   │   │   └── debug
+│   │   │   │       └── jni
+│   │   │   ├── local_only_symbol_list
+│   │   │   │   └── debug
+│   │   │   │       └── R-def.txt
+│   │   │   ├── manifest_merge_blame_file
+│   │   │   │   └── debug
+│   │   │   │       └── manifest-merger-blame-debug-report.txt
+│   │   │   ├── merged_java_res
+│   │   │   │   └── debug
+│   │   │   │       └── feature-tflite_flutter.jar
+│   │   │   ├── merged_jni_libs
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── merged_manifest
+│   │   │   │   └── debug
+│   │   │   │       └── AndroidManifest.xml
+│   │   │   ├── merged_shaders
+│   │   │   │   └── debug
+│   │   │   │       └── out
+│   │   │   ├── navigation_json
+│   │   │   │   └── debug
+│   │   │   │       └── navigation.json
+│   │   │   ├── packaged_res
+│   │   │   │   └── debug
+│   │   │   ├── public_res
+│   │   │   │   └── debug
+│   │   │   ├── runtime_library_classes_dir
+│   │   │   │   └── debug
+│   │   │   ├── runtime_library_classes_jar
+│   │   │   │   └── debug
+│   │   │   │       └── classes.jar
+│   │   │   └── symbol_list_with_package_name
+│   │   │       └── debug
+│   │   │           └── package-aware-r.txt
+│   │   └── outputs
+│   │       ├── aar
+│   │       │   └── tflite_flutter-debug.aar
+│   │       └── logs
+│   │           └── manifest-merger-debug-report.txt
+│   └── cache.dill.track.dill
 ├── ios
 │   ├── Flutter
 │   │   ├── AppFrameworkInfo.plist
@@ -123,9 +2581,16 @@ C:\calimiro_app
 │   │   └── RunnerTests.swift
 │   └── .gitignore
 ├── lib
+│   ├── pages
+│   │   └── workout_page.dart
+│   ├── services
+│   │   └── tflite_service.dart
 │   └── main.dart
 ├── linux
 │   ├── flutter
+│   │   ├── ephemeral
+│   │   │   └── .plugin_symlinks
+│   │   │       └── tflite_flutter -> \\?\C:\Users\lenna\AppData\Local\Pub\Cache\hosted\pub.dev\tflite_flutter-0.11.0\
 │   │   ├── CMakeLists.txt
 │   │   ├── generated_plugin_registrant.cc
 │   │   ├── generated_plugin_registrant.h
@@ -182,7 +2647,6 @@ C:\calimiro_app
 │   │   └── RunnerTests.swift
 │   └── .gitignore
 ├── test
-│   └── widget_test.dart
 ├── web
 │   ├── icons
 │   │   ├── Icon-192.png
@@ -194,6 +2658,10 @@ C:\calimiro_app
 │   └── manifest.json
 ├── windows
 │   ├── flutter
+│   │   ├── ephemeral
+│   │   │   └── .plugin_symlinks
+│   │   │       ├── permission_handler_windows -> \\?\C:\Users\lenna\AppData\Local\Pub\Cache\hosted\pub.dev\permission_handler_windows-0.2.1\
+│   │   │       └── tflite_flutter -> \\?\C:\Users\lenna\AppData\Local\Pub\Cache\hosted\pub.dev\tflite_flutter-0.11.0\
 │   │   ├── CMakeLists.txt
 │   │   ├── generated_plugin_registrant.cc
 │   │   ├── generated_plugin_registrant.h
@@ -214,12 +2682,16 @@ C:\calimiro_app
 │   │   └── win32_window.h
 │   ├── .gitignore
 │   └── CMakeLists.txt
+├── .flutter-plugins
+├── .flutter-plugins-dependencies
 ├── .gitignore
 ├── .metadata
 ├── analysis_options.yaml
 ├── calimiro_app.iml
+├── hs_err_pid22968.log
 ├── pubspec.lock
 ├── pubspec.yaml
 ├── README.md
+├── replay_pid22968.log
 ├── tree-.txt
 └── tree_dump.py
