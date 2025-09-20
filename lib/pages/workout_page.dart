@@ -556,93 +556,380 @@ class _WorkoutPageState extends State<WorkoutPage> {
 
   @override
   Widget build(BuildContext context) {
-    final ready = _controller?.value.isInitialized == true; // Keine TensorFlow Abhängigkeit mehr
+    final ready = _controller?.value.isInitialized == true;
 
     return Scaffold(
+      backgroundColor: const Color(0xFF0A0A0A),
       appBar: AppBar(
-        title: const Text('Workout Session'),
-        backgroundColor: _isLiveAnalysisRunning ? Colors.green : null,
+        title: const Text(
+          'Workout Session',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        backgroundColor: _isLiveAnalysisRunning 
+            ? const Color(0xFF1A4D3A) 
+            : const Color(0xFF1A1A1A),
+        elevation: 0,
+        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
-      body: Column(
-        children: [
-          // Kamera-Vorschau
-          Expanded(
-            flex: 3,
-            child: Container(
-              width: double.infinity,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: ready
-                  ? ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: CameraPreview(_controller!),
-                    )
-                  : Center(
-                      child: Text(
-                        _status,
-                        style: Theme.of(context).textTheme.headlineSmall,
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xFF0A0A0A),
+              Color(0xFF1A1A1A),
+              Color(0xFF0A0A0A),
+            ],
+          ),
+        ),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                // Status Indicator
+                _buildStatusIndicator(),
+                
+                const SizedBox(height: 16),
+                
+                // Kamera-Vorschau
+                Expanded(
+                  flex: 3,
+                  child: _buildCameraPreview(ready),
+                ),
+                
+                const SizedBox(height: 20),
+                
+                // Control Panel
+                _buildControlPanel(ready),
+                
+                const SizedBox(height: 20),
+                
+                // Analyse-Ausgabe
+                Expanded(
+                  flex: 2,
+                  child: _buildAnalysisOutput(),
+                ),
+              ],
             ),
           ),
-          
-          const SizedBox(height: 16),
-          
-          // Steuerungsknöpfe
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            alignment: WrapAlignment.center,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStatusIndicator() {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      decoration: BoxDecoration(
+        color: _isLiveAnalysisRunning 
+            ? const Color(0xFF1A4D3A).withOpacity(0.3)
+            : const Color(0xFF2A2A2A).withOpacity(0.5),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: _isLiveAnalysisRunning 
+              ? const Color(0xFF00FF87).withOpacity(0.3)
+              : const Color(0xFF444444).withOpacity(0.3),
+          width: 1,
+        ),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 8,
+            height: 8,
+            decoration: BoxDecoration(
+              color: _isLiveAnalysisRunning 
+                  ? const Color(0xFF00FF87)
+                  : const Color(0xFF666666),
+              shape: BoxShape.circle,
+            ),
+          ),
+          const SizedBox(width: 12),
+          Text(
+            _status,
+            style: TextStyle(
+              color: _isLiveAnalysisRunning 
+                  ? const Color(0xFF00FF87)
+                  : Colors.white70,
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCameraPreview(bool ready) {
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: _isLiveAnalysisRunning 
+              ? const Color(0xFF00FF87).withOpacity(0.3)
+              : const Color(0xFF333333),
+          width: 2,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: _isLiveAnalysisRunning 
+                ? const Color(0xFF00FF87).withOpacity(0.1)
+                : Colors.black.withOpacity(0.3),
+            blurRadius: 20,
+            spreadRadius: 0,
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(18),
+        child: ready
+            ? CameraPreview(_controller!)
+            : Container(
+                color: const Color(0xFF1A1A1A),
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.videocam_off_rounded,
+                        color: Colors.white38,
+                        size: 48,
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        _status,
+                        style: const TextStyle(
+                          color: Colors.white70,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+      ),
+    );
+  }
+
+  Widget _buildControlPanel(bool ready) {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: const Color(0xFF1A1A1A).withOpacity(0.8),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: const Color(0xFF333333).withOpacity(0.5),
+          width: 1,
+        ),
+      ),
+      child: Column(
+        children: [
+          // Hauptsteuerung
+          Row(
             children: [
-              ElevatedButton.icon(
-                onPressed: ready && !_isLiveAnalysisRunning ? _startLiveAnalysis : null,
-                icon: const Icon(Icons.play_arrow),
-                label: const Text('MediaPipe Start'),
+              Expanded(
+                child: _buildPrimaryButton(
+                  onPressed: ready && !_isLiveAnalysisRunning ? _startLiveAnalysis : null,
+                  icon: Icons.play_arrow_rounded,
+                  label: 'MediaPipe Start',
+                  isPrimary: true,
+                ),
               ),
-              ElevatedButton.icon(
-                onPressed: _isLiveAnalysisRunning ? _stopLiveAnalysis : null,
-                icon: const Icon(Icons.stop),
-                label: const Text('Stoppen'),
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-              ),
-              ElevatedButton.icon(
-                onPressed: ready && _isLiveAnalysisRunning ? _resetReps : null,
-                icon: const Icon(Icons.refresh),
-                label: const Text('Reps Reset'),
-              ),
-              ElevatedButton.icon(
-                onPressed: ready && !_isLiveAnalysisRunning ? _runModelDry : null,
-                icon: const Icon(Icons.science),
-                label: const Text('TF Test'),
-              ),
-              ElevatedButton.icon(
-                onPressed: ready ? _debugModelOutput : null,
-                icon: const Icon(Icons.analytics),
-                label: const Text('Debug'),
+              const SizedBox(width: 12),
+              Expanded(
+                child: _buildPrimaryButton(
+                  onPressed: _isLiveAnalysisRunning ? _stopLiveAnalysis : null,
+                  icon: Icons.stop_rounded,
+                  label: 'Stoppen',
+                  isDestructive: true,
+                ),
               ),
             ],
           ),
           
-          const SizedBox(height: 16),
+          const SizedBox(height: 12),
           
-          // Status und Ausgabe
-          Expanded(
-            flex: 2,
-            child: Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.grey[100],
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: Colors.grey),
+          // Sekundäre Steuerung
+          Row(
+            children: [
+              Expanded(
+                child: _buildSecondaryButton(
+                  onPressed: ready && _isLiveAnalysisRunning ? _resetReps : null,
+                  icon: Icons.refresh_rounded,
+                  label: 'Reps Reset',
+                ),
               ),
-              child: SingleChildScrollView(
-                child: Text(
-                  _lastOutput,
-                  style: const TextStyle(fontFamily: 'monospace'),
+              const SizedBox(width: 8),
+              Expanded(
+                child: _buildSecondaryButton(
+                  onPressed: ready && !_isLiveAnalysisRunning ? _runModelDry : null,
+                  icon: Icons.science_rounded,
+                  label: 'TF Test',
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: _buildSecondaryButton(
+                  onPressed: ready ? _debugModelOutput : null,
+                  icon: Icons.analytics_rounded,
+                  label: 'Debug',
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPrimaryButton({
+    required VoidCallback? onPressed,
+    required IconData icon,
+    required String label,
+    bool isPrimary = false,
+    bool isDestructive = false,
+  }) {
+    Color getColor() {
+      if (isDestructive) return const Color(0xFFFF4757);
+      if (isPrimary) return const Color(0xFF00FF87);
+      return const Color(0xFF444444);
+    }
+
+    Color getDisabledColor() {
+      return getColor().withOpacity(0.3);
+    }
+
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 200),
+      child: ElevatedButton.icon(
+        onPressed: onPressed,
+        icon: Icon(icon, size: 18),
+        label: Text(
+          label,
+          style: const TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: onPressed != null ? getColor() : getDisabledColor(),
+          foregroundColor: onPressed != null 
+              ? (isPrimary || isDestructive ? Colors.black : Colors.white)
+              : Colors.white38,
+          elevation: onPressed != null ? 4 : 0,
+          shadowColor: getColor().withOpacity(0.3),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSecondaryButton({
+    required VoidCallback? onPressed,
+    required IconData icon,
+    required String label,
+  }) {
+    return ElevatedButton.icon(
+      onPressed: onPressed,
+      icon: Icon(icon, size: 16),
+      label: Text(
+        label,
+        style: const TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: onPressed != null 
+            ? const Color(0xFF2A2A2A) 
+            : const Color(0xFF1A1A1A),
+        foregroundColor: onPressed != null 
+            ? Colors.white70 
+            : Colors.white38,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+          side: BorderSide(
+            color: onPressed != null 
+                ? const Color(0xFF444444).withOpacity(0.5)
+                : const Color(0xFF333333).withOpacity(0.3),
+            width: 1,
+          ),
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      ),
+    );
+  }
+
+  Widget _buildAnalysisOutput() {
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: const Color(0xFF1A1A1A).withOpacity(0.8),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: const Color(0xFF333333).withOpacity(0.5),
+          width: 1,
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Header
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: const Color(0xFF2A2A2A).withOpacity(0.5),
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(16),
+                topRight: Radius.circular(16),
+              ),
+            ),
+            child: Row(
+              children: [
+                Icon(
+                  Icons.analytics_outlined,
+                  color: const Color(0xFF00FF87),
+                  size: 20,
+                ),
+                const SizedBox(width: 8),
+                const Text(
+                  'Live Analyse',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          
+          // Content
+          Expanded(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                _lastOutput,
+                style: TextStyle(
+                  fontFamily: 'monospace',
+                  fontSize: 12,
+                  color: Colors.white.withOpacity(0.9),
+                  height: 1.4,
                 ),
               ),
             ),

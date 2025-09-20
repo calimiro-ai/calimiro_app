@@ -24,7 +24,7 @@ class CalimiroApp extends StatelessWidget {
 }
 
 class _Home extends StatelessWidget {
-  const _Home();
+  const _Home(); 
 
   @override
   Widget build(BuildContext context) {
