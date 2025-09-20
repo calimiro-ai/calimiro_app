@@ -23,7 +23,7 @@ android {
         applicationId "com.example.calimiro_app"
 
         // vorher evtl.: minSdk = flutter.minSdkVersion
-        minSdk = 21          // Kamera + TFLite ok
+        minSdk = 26          // Kamera + TFLite ok
 
         // vorher evtl.: targetSdk = flutter.targetSdkVersion
         targetSdk = 35
