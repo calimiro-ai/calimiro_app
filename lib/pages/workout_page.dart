@@ -287,20 +287,20 @@ class _WorkoutPageState extends State<WorkoutPage> {
       }
     }).toList();
 
-    return '''🎯 Live-Analyse:
+    return '''Live-Analyse:
 Erkannte Übung: $detectedClass
 Konfidenz: ${(maxScore * 100).toStringAsFixed(1)}%
 
-📊 Klassifikations-Scores:
+Klassifikations-Scores:
 ${workoutClasses.asMap().entries.map((e) => 
   '${e.value}: ${(classificationScores[e.key] * 100).toStringAsFixed(1)}%'
 ).join('\n')}
 
-⚡ Performance:
+Performance:
 Frames: $_frameCount | Inferenzen: $_inferenceCount
 Ø Inferenz-Zeit: ${_avgInferenceTime.toStringAsFixed(1)}ms
 
-🔢 Pose-Daten (erste 10):
+ Pose-Daten (erste 10):
 ${flatPoseData.take(10).map((value) => value.toStringAsFixed(3)).join(', ')}
 ''';
   }
