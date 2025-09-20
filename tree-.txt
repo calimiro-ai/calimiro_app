@@ -20,6 +20,23 @@ C:\calimiro_app
 │   │   │   ├── native_assets.yaml
 │   │   │   ├── outputs.json
 │   │   │   └── program.dill
+│   │   ├── ce78b73424c9d183a477cb7f9fe95e6c
+│   │   │   ├── .filecache
+│   │   │   ├── app.dill
+│   │   │   ├── debug_android_application.stamp
+│   │   │   ├── flutter_assets.d
+│   │   │   ├── gen_dart_plugin_registrant.stamp
+│   │   │   ├── gen_localizations.stamp
+│   │   │   ├── kernel_snapshot.stamp
+│   │   │   ├── kernel_snapshot_native_assets.stamp
+│   │   │   ├── kernel_snapshot_program.d
+│   │   │   ├── kernel_snapshot_program.stamp
+│   │   │   ├── native_assets.d
+│   │   │   ├── native_assets.dill
+│   │   │   ├── native_assets.stamp
+│   │   │   ├── native_assets.yaml
+│   │   │   ├── outputs.json
+│   │   │   └── program.dill
 │   │   └── dart_plugin_registrant.dart
 │   ├── package_config.json
 │   ├── package_config_subset
@@ -70,11 +87,14 @@ C:\calimiro_app
 │   │   ├── 0b
 │   │   │   └── edcf2fd46788ae3a01a423467513ff59b5c120
 │   │   ├── 0d
+│   │   │   ├── 1d4ad8fa9d76d14f0dae523ce9c369baa5e354
 │   │   │   └── 2902135caece481a035652d88970c80e29cc7e
 │   │   ├── 0e
 │   │   │   └── c303439225b78712f49115768196d8d76f6790
 │   │   ├── 10
 │   │   │   └── ccf0916eb8ab0e538319be71676ef2cbd9673d
+│   │   ├── 11
+│   │   │   └── e0fb85d0fdeabf909740ad103c270540203063
 │   │   ├── 12
 │   │   │   ├── 46f89868b096ada596147af478781147d8984d
 │   │   │   └── adcf3497ef8c5f9c1b21c5f69a42f2a24a3bb7
@@ -96,6 +116,7 @@ C:\calimiro_app
 │   │   ├── 1a
 │   │   │   └── fa75d5671499834c6daff90a79a8ec311c989f
 │   │   ├── 1c
+│   │   │   ├── 225e40c4508120011711d2b2bf343f57aa0d30
 │   │   │   ├── 29b4fc2673ccbb918730c4d3a1f0d51663c591
 │   │   │   └── 4cfdd96a89b0095dbd29a6ca194e41ad77b4fd
 │   │   ├── 1d
@@ -106,6 +127,8 @@ C:\calimiro_app
 │   │   │   └── 43a105539eeb02d80fdc46eaedec260fb9af56
 │   │   ├── 22
 │   │   │   └── c4462b79288fe10768cc571a36732ce5726025
+│   │   ├── 23
+│   │   │   └── 09b5b59e9701a1179166fbcb328e1b8400e71e
 │   │   ├── 24
 │   │   │   └── c96b548420229deca1fbf8253474fdaf177a86
 │   │   ├── 25
@@ -114,10 +137,14 @@ C:\calimiro_app
 │   │   ├── 27
 │   │   │   └── bed1b48e74ad9890241ea5b9686f1f0a410e6e
 │   │   ├── 29
+│   │   │   ├── 6640854285238c08804d34399aa9b7e285947a
 │   │   │   ├── a3a5017f048d6d8e6a450eef64435ddee44fb7
 │   │   │   └── df181096ea0120d304c179ac8fbe8737eb9b9c
 │   │   ├── 2b
+│   │   │   ├── 3c28bb34193bb9c306c7c365426066e7859332
 │   │   │   └── b0105f64e9b7b0cc675b3aad922c69a9bdfea9
+│   │   ├── 2c
+│   │   │   └── a8eb8d3b4292d1d63a27825671136ba49eb052
 │   │   ├── 2e
 │   │   │   └── 1de87a7eb61e17463f7406106f6c413533cecf
 │   │   ├── 2f
@@ -126,6 +153,8 @@ C:\calimiro_app
 │   │   │   ├── 4732f8842013497e14bd02f67a55f2614fb8f7
 │   │   │   ├── 8a2a560b42f17aaf3c36e4e9c8cd07182fbb7e
 │   │   │   └── d2d471c6b9bef248026577c9744c00880bfd41
+│   │   ├── 31
+│   │   │   └── 9b28b0a4a8413c128f6b83665be53b9d179980
 │   │   ├── 32
 │   │   │   ├── 1773cd857a8a0f0c9c7d3dc3f5ff4fb298dc10
 │   │   │   └── 6c0e72c9d820600887813b3b98d0dd69c5d4e8
@@ -150,6 +179,7 @@ C:\calimiro_app
 │   │   │   └── 44414dca5a1b1dc9f940f0f1c7ee25e460152e
 │   │   ├── 3c
 │   │   │   ├── 597679a4a2ed824801d79e6fedfd9c91a8753c
+│   │   │   ├── 5c8715d7245f4988b816c3a8ae9cb5dea8390e
 │   │   │   ├── 85cfe057a1a9dd11fe5c2da1477816fd9a1ff5
 │   │   │   └── c05eb23491684aae1c51ce94668a142bad5125
 │   │   ├── 3d
@@ -162,6 +192,8 @@ C:\calimiro_app
 │   │   │   └── bcbf4780b187e80025b7917058bcb882012aa1
 │   │   ├── 43
 │   │   │   └── 8ece5faecb9845f414c93e3bfff414280d9c1f
+│   │   ├── 45
+│   │   │   └── 7c186996255239cb83d738f61888ba92ac599c
 │   │   ├── 46
 │   │   │   └── b726bd53d47e61ba941eb355b9c8633ebbaa20
 │   │   ├── 47
@@ -190,6 +222,8 @@ C:\calimiro_app
 │   │   │   └── 88276a7b36980d2efa2689a410aebb67aa65b8
 │   │   ├── 5e
 │   │   │   └── 38e316a08397496f3b1c453921adb377a3bf1e
+│   │   ├── 5f
+│   │   │   └── 09d3c6ab6c7b27df355cf95c8e37f5e42ee933
 │   │   ├── 60
 │   │   │   └── 608d0fe5bff3a7a7e05d5a232944a1a8effe5f
 │   │   ├── 61
@@ -198,7 +232,9 @@ C:\calimiro_app
 │   │   ├── 62
 │   │   │   └── 6664468b8914efda0addf1322b12b8c0071710
 │   │   ├── 63
-│   │   │   └── 2d2b2d22cecb11f32745c644c827ecf75669ff
+│   │   │   ├── 2d2b2d22cecb11f32745c644c827ecf75669ff
+│   │   │   ├── 79d4e2b17030f34a172558946ba7585483bc46
+│   │   │   └── f662a435f0332f4da37ec22de22d75c5be9455
 │   │   ├── 64
 │   │   │   └── 1eed1576ce92556f461cc8a4b11707179a153b
 │   │   ├── 66
@@ -242,12 +278,14 @@ C:\calimiro_app
 │   │   │   └── 8775d0d2800f4d71227dcc4d6e6b0de432e119
 │   │   ├── 80
 │   │   │   ├── 82895bd0ab203524ba4389b3b1ad270a298f25
+│   │   │   ├── 8bf818d83a661916e28412b749143248ae47f1
 │   │   │   └── e867a4e06b4dc26d0a2b327cbd54041addc50a
 │   │   ├── 82
 │   │   │   └── b6f9d9a33e198f5747104729e1fcef999772a5
 │   │   ├── 83
 │   │   │   └── 36f4c3c3696f498b06e8b0f5e01889c68c388b
 │   │   ├── 84
+│   │   │   ├── 770f42191affe708a3cc44d0afbe35f2e499c9
 │   │   │   └── ac32ae7d989f82d5e46a60405adcc8279e8001
 │   │   ├── 85
 │   │   │   ├── 2fa1a4728ae4789e3bca55dd07caef3b41f2a5
@@ -281,14 +319,19 @@ C:\calimiro_app
 │   │   │   └── e4772c010489672a256d31a170597fd4e77bf4
 │   │   ├── 95
 │   │   │   └── 5ee3038f988929fac2dedb6a307ebd45dfcfd7
+│   │   ├── 96
+│   │   │   └── a6834d0e63c2a51d193553c1bb3049a4e24135
 │   │   ├── 97
 │   │   │   └── 88e188da821bb7860d346a2749e1b83f71762d
 │   │   ├── 98
-│   │   │   └── 2ea312b1ac2ead9fbc0bfc686d680b4d39a28f
+│   │   │   ├── 2ea312b1ac2ead9fbc0bfc686d680b4d39a28f
+│   │   │   └── 8a0525373af2bd1acb64225fe45ee5f2ee5c4d
 │   │   ├── 9a
 │   │   │   └── e34a406c33b0f6d67529c41321876170c25b57
 │   │   ├── 9d
 │   │   │   └── a19eacad3b03bb08bbddbbf4ac48dd78b3d838
+│   │   ├── a1
+│   │   │   └── bddda51915f2c2f58cc1e70dc701c7263e3437
 │   │   ├── a2
 │   │   │   └── ec33f19f110ebff51a23342d7bc29ec9a1aaa6
 │   │   ├── a5
@@ -306,6 +349,11 @@ C:\calimiro_app
 │   │   │   └── c108915ce15fda5c50ca5b4ede9640c817f9d4
 │   │   ├── b1
 │   │   │   └── 0f3001a212b364ce243f8b80c7da450928d777
+│   │   ├── b2
+│   │   │   └── 38e2b8f45ffe1342f8813924fcbd711888fdc9
+│   │   ├── b5
+│   │   │   ├── 0d2236da1100f17ab573b922803375b2c74462
+│   │   │   └── e6737b8dc798381135b6713f17cccaae72b4e7
 │   │   ├── b7
 │   │   │   ├── 49bfef07473333cf1dd31e9eed89862a5d52aa
 │   │   │   └── ad1fa7488a13d5f0a4fb2b528f03ddf586f75c
@@ -332,12 +380,16 @@ C:\calimiro_app
 │   │   │   └── 1dcb5bbe2ee193605b19689c58ff636ff4d5f5
 │   │   ├── c2
 │   │   │   └── efd0b608ba84712fb3e1d01122468a50c7fba1
+│   │   ├── c3
+│   │   │   └── 8c59f5169d626605bb3f835146808ded2dab3f
 │   │   ├── c4
 │   │   │   ├── 1de64d406e41ccf7ead75ced9608c9c128024c
 │   │   │   └── 3cc9b8ba4e4ae5c6df5ed5e3f199668b7fead0
 │   │   ├── c5
 │   │   │   └── 1a04d3d0baf74177f5b13de4203ba130199557
 │   │   ├── c7
+│   │   │   ├── 0da69e6aaed61f4a9fb6cc09f3e3eca3c3bdcc
+│   │   │   ├── 362ed4f76dd58dcd94c0b9ba8b96a04d500b88
 │   │   │   └── e9c584c7d12e8147e1f0f1c9c4477c686bf233
 │   │   ├── c9
 │   │   │   └── b6b16b39d36b0e8c7f7512c1741390e67f0ca8
@@ -350,10 +402,12 @@ C:\calimiro_app
 │   │   ├── cc
 │   │   │   └── cf817a52206e8a8eef501faed292993ff21a31
 │   │   ├── ce
+│   │   │   ├── 5c165feebee01fae26ee17541f6e2d4c57503e
 │   │   │   └── 840d1943839e5101d9a40663930c3fbbf320fd
 │   │   ├── cf
 │   │   │   └── 3f2cbed95255fcc9ba3cb2cb4a153894f738b6
 │   │   ├── d0
+│   │   │   ├── 1c21190de12f3dbf0bb7c500feac9cc45aef11
 │   │   │   ├── 44da85245f583954a96bee75a1f23e9b5ce1ae
 │   │   │   └── 651fda5fbc1e0e728fe38d2abc65f7250c177d
 │   │   ├── d2
@@ -389,6 +443,7 @@ C:\calimiro_app
 │   │   ├── df
 │   │   │   └── f4f49561c816f70eaea557d889d31cf63447ac
 │   │   ├── e0
+│   │   │   ├── 0439fcdbbfcf081c6f971fe7226bf4165e8cbd
 │   │   │   ├── 73d6f35c7823f7f9225066ca8f9d2d007ca6e0
 │   │   │   └── f0a47bc08f30b550b47b01de4c9206b6824dd9
 │   │   ├── e3
@@ -1110,10 +1165,8 @@ C:\calimiro_app
 │   │   │   │       └── out
 │   │   │   │           └── lib
 │   │   │   │               ├── arm64-v8a
-│   │   │   │               │   ├── libflutter.so
 │   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
-│   │   │   │               │   ├── libtensorflowlite_jni.so
-│   │   │   │               │   └── libVkLayer_khronos_validation.so
+│   │   │   │               │   └── libtensorflowlite_jni.so
 │   │   │   │               ├── armeabi-v7a
 │   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
 │   │   │   │               │   └── libtensorflowlite_jni.so
@@ -1385,10 +1438,8 @@ C:\calimiro_app
 │   │   │   │       └── out
 │   │   │   │           └── lib
 │   │   │   │               ├── arm64-v8a
-│   │   │   │               │   ├── libflutter.so
 │   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
-│   │   │   │               │   ├── libtensorflowlite_jni.so
-│   │   │   │               │   └── libVkLayer_khronos_validation.so
+│   │   │   │               │   └── libtensorflowlite_jni.so
 │   │   │   │               ├── armeabi-v7a
 │   │   │   │               │   ├── libtensorflowlite_gpu_jni.so
 │   │   │   │               │   └── libtensorflowlite_jni.so
@@ -1518,8 +1569,13 @@ C:\calimiro_app
 │   │   │   │   └── app-debug.apk.sha1
 │   │   │   └── logs
 │   │   │       └── manifest-merger-debug-report.txt
+│   │   ├── snapshot
+│   │   │   └── kotlin
 │   │   └── tmp
 │   │       ├── compileDebugJavaWithJavac
+│   │       │   ├── compileTransaction
+│   │       │   │   ├── backup-dir
+│   │       │   │   └── stash-dir
 │   │       │   └── previous-compilation-data.bin
 │   │       ├── kotlin-classes
 │   │       │   └── debug
