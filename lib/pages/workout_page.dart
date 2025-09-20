@@ -84,7 +84,9 @@ class _WorkoutPageState extends State<WorkoutPage> {
       setState(() {
         _status = 'Bereit';
         _lastOutput =
-            'OutputShape: ${res['outputShape']}\nPreview: ${res['preview']}';
+            'OutputShapes: ${res['outputShapes']}\n'
+            'OutputCount: ${res['outputCount']}\n'
+            'Preview: ${res['preview']}';
       });
     } catch (e) {
       setState(() {
