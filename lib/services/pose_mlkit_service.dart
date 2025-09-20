@@ -1,6 +1,6 @@
 // lib/services/pose_mlkit_service.dart
-import 'dart:typed_data';
 import 'dart:math' as math;
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:google_mlkit_pose_detection/google_mlkit_pose_detection.dart';
@@ -90,28 +90,19 @@ class PoseMlkitService {
 
   // ---- CameraImage -> InputImage (ML Kit) ----
   InputImage _toInputImage(CameraImage image, InputImageRotation rotation) {
-    // YUV420 zusammenfügen mit BytesBuilder
-    final BytesBuilder allBytesBuilder = BytesBuilder();
-    for (final plane in image.planes) {
-      allBytesBuilder.add(plane.bytes);
-    }
-    final bytes = allBytesBuilder.takeBytes();
-
-    final Size imageSize = Size(image.width.toDouble(), image.height.toDouble());
-    final InputImageFormat format =
-        InputImageFormatValue.fromRawValue(image.format.raw) ?? InputImageFormat.yuv420;
-
-    // Korrekte InputImageMetadata Erstellung
-    final inputImageMetadata = InputImageMetadata(
-      size: imageSize,
+    // Verwende nur die Bytes vom ersten Plane für bessere Kompatibilität
+    final Uint8List bytes = image.planes[0].bytes;
+    
+    final inputImageData = InputImageMetadata(
+      size: Size(image.width.toDouble(), image.height.toDouble()),
       rotation: rotation,
-      format: format,
-      bytesPerRow: image.planes.first.bytesPerRow,
+      format: InputImageFormat.nv21, // Explizit NV21 setzen
+      bytesPerRow: image.planes[0].bytesPerRow,
     );
 
     return InputImage.fromBytes(
-      bytes: bytes, 
-      metadata: inputImageMetadata,
+      bytes: bytes,
+      metadata: inputImageData,
     );
   }
 }
