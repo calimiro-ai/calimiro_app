@@ -33,23 +33,36 @@ class _WorkoutPageState extends State<WorkoutPage> {
     }
 
     setState(() => _status = 'Initialisiere Kamera...');
-    final cams = await availableCameras();
-    final back = cams.firstWhere(
-      (c) => c.lensDirection == CameraLensDirection.back,
-      orElse: () => cams.first,
-    );
+    try {
+      final cams = await availableCameras();
+      if (cams.isEmpty) {
+        setState(() => _status = 'Keine Kamera gefunden.');
+        return;
+      }
+      
+      final back = cams.firstWhere(
+        (c) => c.lensDirection == CameraLensDirection.back,
+        orElse: () => cams.first,
+      );
 
-    _controller = CameraController(
-      back,
-      ResolutionPreset.medium,
-      enableAudio: false,
-    );
-    await _controller!.initialize();
+      _controller = CameraController(
+        back,
+        ResolutionPreset.medium,
+        enableAudio: false,
+      );
+      await _controller!.initialize();
+    } catch (e) {
+      setState(() => _status = 'Kamera-Fehler: ${e.toString()}');
+      return;
+    }
 
     setState(() => _status = 'Lade Modell...');
-    await _tflite.load();
-
-    setState(() => _status = 'Bereit');
+    try {
+      await _tflite.load();
+      setState(() => _status = 'Bereit');
+    } catch (e) {
+      setState(() => _status = 'Modell-Ladefehler: ${e.toString()}');
+    }
   }
 
   Future<bool> _ensureCameraPermission() async {
@@ -76,7 +89,23 @@ class _WorkoutPageState extends State<WorkoutPage> {
     } catch (e) {
       setState(() {
         _status = 'Fehler';
-        _lastOutput = e.toString();
+        _lastOutput = 'Fehler bei Model-Ausführung:\n${e.toString()}';
+      });
+    }
+  }
+
+  Future<void> _debugModelInfo() async {
+    try {
+      setState(() => _status = 'Lade Modell-Info...');
+      final info = _tflite.getModelInfo();
+      setState(() {
+        _status = 'Bereit';
+        _lastOutput = 'Modell-Info:\n${info.entries.map((e) => '${e.key}: ${e.value}').join('\n')}';
+      });
+    } catch (e) {
+      setState(() {
+        _status = 'Fehler';
+        _lastOutput = 'Fehler beim Abrufen der Modell-Info:\n${e.toString()}';
       });
     }
   }
@@ -101,13 +130,29 @@ class _WorkoutPageState extends State<WorkoutPage> {
           const SizedBox(height: 12),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Row(
+            child: Column(
               children: [
-                Expanded(child: Text('Status: $_status')),
-                FilledButton.icon(
-                  onPressed: ready ? _runModelDry : null,
-                  icon: const Icon(Icons.play_arrow),
-                  label: const Text('Run model'),
+                Row(
+                  children: [
+                    Expanded(child: Text('Status: $_status')),
+                    FilledButton.icon(
+                      onPressed: ready ? _runModelDry : null,
+                      icon: const Icon(Icons.play_arrow),
+                      label: const Text('Run Model'),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        onPressed: _tflite.isLoaded ? _debugModelInfo : null,
+                        icon: const Icon(Icons.info),
+                        label: const Text('Debug Model Info'),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -118,7 +163,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
               padding: const EdgeInsets.all(12),
               child: Text(
                 _lastOutput,
-                style: const TextStyle(fontFamily: 'monospace'),
+                style: const TextStyle(fontFamily: 'monospace', fontSize: 12),
               ),
             ),
           ),
