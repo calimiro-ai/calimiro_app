@@ -52,10 +52,16 @@ class _Home extends StatefulWidget {
 class _HomeState extends State<_Home> with TickerProviderStateMixin {
   late AnimationController _fadeController;
   late Animation<double> _fadeAnimation;
+  bool _isDisposed = false;
 
   @override
   void initState() {
     super.initState();
+    _initAnimations();
+  }
+
+  void _initAnimations() {
+    if (_isDisposed) return;
     
     _fadeController = AnimationController(
       duration: const Duration(milliseconds: 1500),
@@ -72,12 +78,15 @@ class _HomeState extends State<_Home> with TickerProviderStateMixin {
     
     // Sanfte Animation starten
     Future.delayed(const Duration(milliseconds: 200), () {
-      _fadeController.forward();
+      if (!_isDisposed && mounted) {
+        _fadeController.forward();
+      }
     });
   }
 
   @override
   void dispose() {
+    _isDisposed = true;
     _fadeController.dispose();
     super.dispose();
   }
@@ -106,33 +115,36 @@ class _HomeState extends State<_Home> with TickerProviderStateMixin {
           ),
         ),
         child: SafeArea(
-          child: FadeTransition(
-            opacity: _fadeAnimation,
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 20),
-                  
-                  // Header Section
-                  _buildHeader(),
-                  
-                  const SizedBox(height: 60),
-                  
-                  // Features List
-                  _buildFeaturesList(),
-                  
-                  const SizedBox(height: 40),
-                  
-                  // Main CTA Button
-                  _buildMainButton(context),
-                  
-                  const SizedBox(height: 32),
-                ],
+          child: _isDisposed 
+            ? Container() // Fallback bei disposed state
+            : FadeTransition(
+                opacity: _fadeAnimation,
+                child: SingleChildScrollView(
+                  physics: const AlwaysScrollableScrollPhysics(),
+                  padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 24.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 20),
+                      
+                      // Header Section
+                      _buildHeader(),
+                      
+                      const SizedBox(height: 60),
+                      
+                      // Features List
+                      _buildFeaturesList(),
+                      
+                      const SizedBox(height: 40),
+                      
+                      // Main CTA Button
+                      _buildMainButton(context),
+                      
+                      const SizedBox(height: 32),
+                    ],
+                  ),
+                ),
               ),
-            ),
-          ),
         ),
       ),
     );
@@ -242,128 +254,114 @@ class _HomeState extends State<_Home> with TickerProviderStateMixin {
     required String description,
     required int delay,
   }) {
-    return TweenAnimationBuilder<double>(
-      duration: Duration(milliseconds: 800 + delay),
-      tween: Tween(begin: 0.0, end: 1.0),
-      curve: Curves.easeOutCubic,
-      builder: (context, value, child) {
-        return Transform.translate(
-          offset: Offset(0, 20 * (1 - value)),
-          child: Opacity(
-            opacity: value,
-            child: Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(24),
-              decoration: BoxDecoration(
-                color: const Color(0xFF1A1A1A).withOpacity(0.4),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                  color: const Color(0xFF2A2A2A).withOpacity(0.6),
-                  width: 1,
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      height: 1.3,
-                    ),
-                  ),
-                  
-                  const SizedBox(height: 8),
-                  
-                  Text(
-                    description,
-                    style: TextStyle(
-                      color: Colors.white.withOpacity(0.6),
-                      fontSize: 13,
-                      fontWeight: FontWeight.w300,
-                      height: 1.5,
-                    ),
-                  ),
-                ],
-              ),
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: const Color(0xFF1A1A1A).withOpacity(0.4),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: const Color(0xFF2A2A2A).withOpacity(0.6),
+          width: 1,
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+              height: 1.3,
             ),
           ),
-        );
-      },
+          
+          const SizedBox(height: 8),
+          
+          Text(
+            description,
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.6),
+              fontSize: 13,
+              fontWeight: FontWeight.w300,
+              height: 1.5,
+            ),
+          ),
+        ],
+      ),
     );
   }
 
   Widget _buildMainButton(BuildContext context) {
-    return TweenAnimationBuilder<double>(
-      duration: const Duration(milliseconds: 1200),
-      tween: Tween(begin: 0.0, end: 1.0),
-      curve: Curves.easeOutCubic,
-      builder: (context, value, child) {
-        return Transform.translate(
-          offset: Offset(0, 30 * (1 - value)),
-          child: Opacity(
-            opacity: value,
-            child: Container(
-              width: double.infinity,
-              height: 56,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    const Color(0xFF2A2A2A).withOpacity(0.8),
-                    const Color(0xFF1A1A1A).withOpacity(0.9),
-                  ],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
+    return Container(
+      width: double.infinity,
+      height: 56,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            const Color(0xFF2A2A2A).withOpacity(0.8),
+            const Color(0xFF1A1A1A).withOpacity(0.9),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: const Color(0xFF3A3A3A).withOpacity(0.8),
+          width: 1,
+        ),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(16),
+          onTap: () => _navigateToWorkout(context),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.arrow_forward_rounded,
+                  color: Colors.white.withOpacity(0.9),
+                  size: 20,
                 ),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                  color: const Color(0xFF3A3A3A).withOpacity(0.8),
-                  width: 1,
-                ),
-              ),
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  borderRadius: BorderRadius.circular(16),
-                  onTap: () => _navigateToWorkout(context),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 24),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.arrow_forward_rounded,
-                          color: Colors.white.withOpacity(0.9),
-                          size: 20,
-                        ),
-                        const SizedBox(width: 12),
-                        const Text(
-                          'Workout Session starten',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ],
-                    ),
+                const SizedBox(width: 12),
+                const Text(
+                  'Workout Session starten',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
-              ),
+              ],
             ),
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 
-  void _navigateToWorkout(BuildContext context) {
+  void _navigateToWorkout(BuildContext context) async {
     // Sanftes Haptic feedback
     HapticFeedback.lightImpact();
     
-    // Navigation
-    Navigator.of(context).pushNamed('/workout');
+    try {
+      // Navigation mit await für sauberes Cleanup
+      await Navigator.of(context).pushNamed('/workout');
+      
+      // Nach Rückkehr: Sicherstellen dass Widget noch mounted ist
+      if (mounted && !_isDisposed) {
+        // Optional: Animationen neu starten nach Rückkehr
+        setState(() {
+          // Trigger rebuild
+        });
+      }
+    } catch (e) {
+      print('Navigation error: $e');
+    }
   }
 }

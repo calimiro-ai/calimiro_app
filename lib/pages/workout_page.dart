@@ -3,6 +3,7 @@ import 'dart:async';
 import 'dart:typed_data';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_mlkit_pose_detection/google_mlkit_pose_detection.dart';
 import 'package:permission_handler/permission_handler.dart';
 import '../services/tflite_service.dart';
@@ -282,8 +283,8 @@ class _WorkoutPageState extends State<WorkoutPage> {
           setState(() {
             _lastOutput = 'Keine Pose erkannt...\n\n'
                          'Pose Detection Status:\n'
-                         'Erfolg: $_poseDetectionSuccessCount\n'
-                         'Fehler: $_poseDetectionFailureCount\n\n'
+                         '✓ Erfolg: $_poseDetectionSuccessCount\n'
+                         '✗ Fehler: $_poseDetectionFailureCount\n\n'
                          'Tipps:\n'
                          '• Stellen Sie sicher, dass Sie vollständig im Bild sind\n'
                          '• Sorgen Sie für gute Beleuchtung\n'
@@ -331,7 +332,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
     output.writeln('Erkannte Übung: ${analysisResult['exercise']}');
     output.writeln('Konfidenz: ${(analysisResult['confidence'] * 100).toStringAsFixed(1)}%');
     output.writeln('Wiederholungen: ${analysisResult['reps']}');
-    output.writeln('Status: ${analysisResult['inMovement'] ? "In Bewegung" : "⏸ Ruhend"}');
+    output.writeln('Status: ${analysisResult['inMovement'] ? "🏃 In Bewegung" : "⏸ Ruhend"}');
     output.writeln('Grund: ${analysisResult['reason']}');
     
     // 2. Alle Übungsscores
@@ -343,7 +344,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
       
       for (final entry in sortedEntries) {
         final score = entry.value * 100;
-        final marker = entry.key == analysisResult['exercise'] ? '' : '  ';
+        final marker = entry.key == analysisResult['exercise'] ? '🏆' : '  ';
         output.writeln('$marker ${entry.key}: ${score.toStringAsFixed(1)}%');
       }
     }
@@ -532,7 +533,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
           debug.writeln('TensorFlow Status: ⚠ Fehler beim Laden: $e');
         }
       } else {
-        debug.writeln('TensorFlow Status: Nicht geladen (optional)');
+        debug.writeln('TensorFlow Status: ❌ Nicht geladen (optional)');
       }
       
       debug.writeln('\n=== SYSTEM-EMPFEHLUNGEN ===');
@@ -560,43 +561,51 @@ class _WorkoutPageState extends State<WorkoutPage> {
 
     return Scaffold(
       backgroundColor: const Color(0xFF0A0A0A),
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: const Text(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_rounded,
+            color: Colors.white.withOpacity(0.9),
+          ),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(
           'Workout Session',
           style: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-            fontWeight: FontWeight.w600,
+            color: Colors.white.withOpacity(0.9),
+            fontSize: 18,
+            fontWeight: FontWeight.w400,
+            letterSpacing: 0.5,
           ),
         ),
-        backgroundColor: _isLiveAnalysisRunning 
-            ? const Color(0xFF1A4D3A) 
-            : const Color(0xFF1A1A1A),
-        elevation: 0,
         centerTitle: true,
-        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
             colors: [
+              Color(0xFF0F0F0F),
               Color(0xFF0A0A0A),
-              Color(0xFF1A1A1A),
-              Color(0xFF0A0A0A),
+              Color(0xFF050505),
             ],
+            stops: [0.0, 0.5, 1.0],
           ),
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
                 // Status Indicator
                 _buildStatusIndicator(),
                 
-                const SizedBox(height: 16),
+                const SizedBox(height: 24),
                 
                 // Kamera-Vorschau
                 Expanded(
@@ -604,12 +613,12 @@ class _WorkoutPageState extends State<WorkoutPage> {
                   child: _buildCameraPreview(ready),
                 ),
                 
-                const SizedBox(height: 20),
+                const SizedBox(height: 24),
                 
                 // Control Panel
                 _buildControlPanel(ready),
                 
-                const SizedBox(height: 20),
+                const SizedBox(height: 24),
                 
                 // Analyse-Ausgabe
                 Expanded(
@@ -627,40 +636,39 @@ class _WorkoutPageState extends State<WorkoutPage> {
   Widget _buildStatusIndicator() {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
-        color: _isLiveAnalysisRunning 
-            ? const Color(0xFF1A4D3A).withOpacity(0.3)
-            : const Color(0xFF2A2A2A).withOpacity(0.5),
-        borderRadius: BorderRadius.circular(12),
+        color: const Color(0xFF1A1A1A).withOpacity(0.6),
+        borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: _isLiveAnalysisRunning 
-              ? const Color(0xFF00FF87).withOpacity(0.3)
-              : const Color(0xFF444444).withOpacity(0.3),
+              ? const Color(0xFF4A4A4A).withOpacity(0.8)
+              : const Color(0xFF2A2A2A).withOpacity(0.6),
           width: 1,
         ),
       ),
       child: Row(
         children: [
           Container(
-            width: 8,
-            height: 8,
+            width: 6,
+            height: 6,
             decoration: BoxDecoration(
               color: _isLiveAnalysisRunning 
-                  ? const Color(0xFF00FF87)
-                  : const Color(0xFF666666),
+                  ? Colors.white.withOpacity(0.9)
+                  : Colors.white.withOpacity(0.4),
               shape: BoxShape.circle,
             ),
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 16),
           Text(
             _status,
             style: TextStyle(
               color: _isLiveAnalysisRunning 
-                  ? const Color(0xFF00FF87)
-                  : Colors.white70,
+                  ? Colors.white.withOpacity(0.9)
+                  : Colors.white.withOpacity(0.6),
               fontSize: 14,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w400,
+              letterSpacing: 0.3,
             ),
           ),
         ],
@@ -675,42 +683,34 @@ class _WorkoutPageState extends State<WorkoutPage> {
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
           color: _isLiveAnalysisRunning 
-              ? const Color(0xFF00FF87).withOpacity(0.3)
-              : const Color(0xFF333333),
-          width: 2,
+              ? const Color(0xFF4A4A4A).withOpacity(0.8)
+              : const Color(0xFF2A2A2A).withOpacity(0.6),
+          width: 1.5,
         ),
-        boxShadow: [
-          BoxShadow(
-            color: _isLiveAnalysisRunning 
-                ? const Color(0xFF00FF87).withOpacity(0.1)
-                : Colors.black.withOpacity(0.3),
-            blurRadius: 20,
-            spreadRadius: 0,
-          ),
-        ],
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(18),
         child: ready
             ? CameraPreview(_controller!)
             : Container(
-                color: const Color(0xFF1A1A1A),
+                color: const Color(0xFF1A1A1A).withOpacity(0.8),
                 child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
-                        Icons.videocam_off_rounded,
-                        color: Colors.white38,
-                        size: 48,
+                        Icons.videocam_off_outlined,
+                        color: Colors.white.withOpacity(0.3),
+                        size: 40,
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 20),
                       Text(
                         _status,
-                        style: const TextStyle(
-                          color: Colors.white70,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.6),
+                          fontSize: 15,
+                          fontWeight: FontWeight.w300,
+                          height: 1.4,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -724,12 +724,12 @@ class _WorkoutPageState extends State<WorkoutPage> {
 
   Widget _buildControlPanel(bool ready) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: const Color(0xFF1A1A1A).withOpacity(0.8),
-        borderRadius: BorderRadius.circular(16),
+        color: const Color(0xFF1A1A1A).withOpacity(0.6),
+        borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: const Color(0xFF333333).withOpacity(0.5),
+          color: const Color(0xFF2A2A2A).withOpacity(0.6),
           width: 1,
         ),
       ),
@@ -746,7 +746,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
                   isPrimary: true,
                 ),
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: 16),
               Expanded(
                 child: _buildPrimaryButton(
                   onPressed: _isLiveAnalysisRunning ? _stopLiveAnalysis : null,
@@ -758,24 +758,31 @@ class _WorkoutPageState extends State<WorkoutPage> {
             ],
           ),
           
-          const SizedBox(height: 12),
+          const SizedBox(height: 16),
           
           // Sekundäre Steuerung
           Row(
             children: [
-              const SizedBox(width: 8),
+              Expanded(
+                child: _buildSecondaryButton(
+                  onPressed: ready && _isLiveAnalysisRunning ? _resetReps : null,
+                  icon: Icons.refresh_rounded,
+                  label: 'Reset',
+                ),
+              ),
+              const SizedBox(width: 6),
               Expanded(
                 child: _buildSecondaryButton(
                   onPressed: ready && !_isLiveAnalysisRunning ? _runModelDry : null,
-                  icon: Icons.science_rounded,
-                  label: 'TF Test',
+                  icon: Icons.science_outlined,
+                  label: 'Test',
                 ),
               ),
-              const SizedBox(width: 8),
+              const SizedBox(width: 6),
               Expanded(
                 child: _buildSecondaryButton(
                   onPressed: ready ? _debugModelOutput : null,
-                  icon: Icons.analytics_rounded,
+                  icon: Icons.analytics_outlined,
                   label: 'Debug',
                 ),
               ),
@@ -794,38 +801,59 @@ class _WorkoutPageState extends State<WorkoutPage> {
     bool isDestructive = false,
   }) {
     Color getColor() {
-      if (isDestructive) return const Color(0xFFFF4757);
-      if (isPrimary) return const Color(0xFF00FF87);
-      return const Color(0xFF444444);
+      if (isDestructive) return const Color(0xFF404040);
+      if (isPrimary) return const Color(0xFF2A2A2A);
+      return const Color(0xFF1A1A1A);
     }
 
-    Color getDisabledColor() {
-      return getColor().withOpacity(0.3);
+    Color getBorderColor() {
+      if (isDestructive) return const Color(0xFF505050);
+      if (isPrimary) return const Color(0xFF404040);
+      return const Color(0xFF2A2A2A);
     }
 
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 200),
-      child: ElevatedButton.icon(
-        onPressed: onPressed,
-        icon: Icon(icon, size: 18),
-        label: Text(
-          label,
-          style: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w600,
-          ),
+    Color getTextColor() {
+      if (onPressed == null) return Colors.white.withOpacity(0.3);
+      return Colors.white.withOpacity(0.9);
+    }
+
+    return Container(
+      height: 48,
+      decoration: BoxDecoration(
+        color: onPressed != null ? getColor() : getColor().withOpacity(0.5),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: onPressed != null ? getBorderColor() : getBorderColor().withOpacity(0.3),
+          width: 1,
         ),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: onPressed != null ? getColor() : getDisabledColor(),
-          foregroundColor: onPressed != null 
-              ? (isPrimary || isDestructive ? Colors.black : Colors.white)
-              : Colors.white38,
-          elevation: onPressed != null ? 4 : 0,
-          shadowColor: getColor().withOpacity(0.3),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(12),
+          onTap: onPressed,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  icon,
+                  size: 18,
+                  color: getTextColor(),
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    color: getTextColor(),
+                  ),
+                ),
+              ],
+            ),
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         ),
       ),
     );
@@ -836,34 +864,52 @@ class _WorkoutPageState extends State<WorkoutPage> {
     required IconData icon,
     required String label,
   }) {
-    return ElevatedButton.icon(
-      onPressed: onPressed,
-      icon: Icon(icon, size: 16),
-      label: Text(
-        label,
-        style: const TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.w500,
+    return Container(
+      height: 40,
+      decoration: BoxDecoration(
+        color: onPressed != null 
+            ? const Color(0xFF1A1A1A).withOpacity(0.8)
+            : const Color(0xFF1A1A1A).withOpacity(0.4),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: onPressed != null 
+              ? const Color(0xFF2A2A2A).withOpacity(0.8)
+              : const Color(0xFF2A2A2A).withOpacity(0.4),
+          width: 1,
         ),
       ),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: onPressed != null 
-            ? const Color(0xFF2A2A2A) 
-            : const Color(0xFF1A1A1A),
-        foregroundColor: onPressed != null 
-            ? Colors.white70 
-            : Colors.white38,
-        elevation: 0,
-        shape: RoundedRectangleBorder(
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
           borderRadius: BorderRadius.circular(10),
-          side: BorderSide(
-            color: onPressed != null 
-                ? const Color(0xFF444444).withOpacity(0.5)
-                : const Color(0xFF333333).withOpacity(0.3),
-            width: 1,
+          onTap: onPressed,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  icon,
+                  size: 16,
+                  color: onPressed != null 
+                      ? Colors.white.withOpacity(0.7)
+                      : Colors.white.withOpacity(0.3),
+                ),
+                const SizedBox(width: 6),
+                Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w300,
+                    color: onPressed != null 
+                        ? Colors.white.withOpacity(0.7)
+                        : Colors.white.withOpacity(0.3),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       ),
     );
   }
@@ -872,10 +918,10 @@ class _WorkoutPageState extends State<WorkoutPage> {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: const Color(0xFF1A1A1A).withOpacity(0.8),
-        borderRadius: BorderRadius.circular(16),
+        color: const Color(0xFF1A1A1A).withOpacity(0.6),
+        borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: const Color(0xFF333333).withOpacity(0.5),
+          color: const Color(0xFF2A2A2A).withOpacity(0.6),
           width: 1,
         ),
       ),
@@ -884,28 +930,29 @@ class _WorkoutPageState extends State<WorkoutPage> {
         children: [
           // Header
           Container(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
-              color: const Color(0xFF2A2A2A).withOpacity(0.5),
+              color: const Color(0xFF2A2A2A).withOpacity(0.4),
               borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(16),
-                topRight: Radius.circular(16),
+                topLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
               ),
             ),
             child: Row(
               children: [
                 Icon(
                   Icons.analytics_outlined,
-                  color: const Color(0xFF00FF87),
-                  size: 20,
+                  color: Colors.white.withOpacity(0.7),
+                  size: 18,
                 ),
-                const SizedBox(width: 8),
-                const Text(
+                const SizedBox(width: 12),
+                Text(
                   'Live Analyse',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.white.withOpacity(0.9),
                     fontSize: 16,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w400,
+                    letterSpacing: 0.3,
                   ),
                 ),
               ],
@@ -915,14 +962,14 @@ class _WorkoutPageState extends State<WorkoutPage> {
           // Content
           Expanded(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(20),
               child: Text(
                 _lastOutput,
                 style: TextStyle(
                   fontFamily: 'monospace',
                   fontSize: 12,
-                  color: Colors.white.withOpacity(0.9),
-                  height: 1.4,
+                  color: Colors.white.withOpacity(0.8),
+                  height: 1.5,
                 ),
               ),
             ),
