@@ -332,7 +332,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
     output.writeln('Erkannte Übung: ${analysisResult['exercise']}');
     output.writeln('Konfidenz: ${(analysisResult['confidence'] * 100).toStringAsFixed(1)}%');
     output.writeln('Wiederholungen: ${analysisResult['reps']}');
-    output.writeln('Status: ${analysisResult['inMovement'] ? "🏃 In Bewegung" : "⏸ Ruhend"}');
+    output.writeln('Status: ${analysisResult['inMovement'] ? "In Bewegung" : "⏸ Ruhend"}');
     output.writeln('Grund: ${analysisResult['reason']}');
     
     // 2. Alle Übungsscores
@@ -344,7 +344,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
       
       for (final entry in sortedEntries) {
         final score = entry.value * 100;
-        final marker = entry.key == analysisResult['exercise'] ? '🏆' : '  ';
+        final marker = entry.key == analysisResult['exercise'] ? '' : '  ';
         output.writeln('$marker ${entry.key}: ${score.toStringAsFixed(1)}%');
       }
     }
@@ -533,7 +533,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
           debug.writeln('TensorFlow Status: ⚠ Fehler beim Laden: $e');
         }
       } else {
-        debug.writeln('TensorFlow Status: ❌ Nicht geladen (optional)');
+        debug.writeln('TensorFlow Status: ⌀ Nicht geladen (optional)');
       }
       
       debug.writeln('\n=== SYSTEM-EMPFEHLUNGEN ===');
@@ -558,6 +558,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
   @override
   Widget build(BuildContext context) {
     final ready = _controller?.value.isInitialized == true;
+    final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
       backgroundColor: const Color(0xFF0A0A0A),
@@ -598,7 +599,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
           ),
         ),
         child: SafeArea(
-          child: Padding(
+          child: SingleChildScrollView(
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
@@ -607,9 +608,9 @@ class _WorkoutPageState extends State<WorkoutPage> {
                 
                 const SizedBox(height: 24),
                 
-                // Kamera-Vorschau
-                Expanded(
-                  flex: 3,
+                // Kamera-Vorschau - feste Höhe basierend auf Bildschirmgröße
+                SizedBox(
+                  height: screenHeight * 0.4, // 40% der Bildschirmhöhe
                   child: _buildCameraPreview(ready),
                 ),
                 
@@ -620,11 +621,11 @@ class _WorkoutPageState extends State<WorkoutPage> {
                 
                 const SizedBox(height: 24),
                 
-                // Analyse-Ausgabe
-                Expanded(
-                  flex: 2,
-                  child: _buildAnalysisOutput(),
-                ),
+                // Analyse-Ausgabe - nimmt jetzt die natürliche Höhe
+                _buildAnalysisOutput(),
+                
+                // Zusätzlicher Abstand am Ende für bessere Scrolling-Erfahrung
+                const SizedBox(height: 40),
               ],
             ),
           ),
@@ -927,6 +928,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min, // Wichtig: nimmt nur benötigten Platz
         children: [
           // Header
           Container(
@@ -959,18 +961,17 @@ class _WorkoutPageState extends State<WorkoutPage> {
             ),
           ),
           
-          // Content
-          Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(20),
-              child: Text(
-                _lastOutput,
-                style: TextStyle(
-                  fontFamily: 'monospace',
-                  fontSize: 12,
-                  color: Colors.white.withOpacity(0.8),
-                  height: 1.5,
-                ),
+          // Content - jetzt ohne Expanded, nimmt natürliche Höhe
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(20),
+            child: Text(
+              _lastOutput,
+              style: TextStyle(
+                fontFamily: 'monospace',
+                fontSize: 12,
+                color: Colors.white.withOpacity(0.8),
+                height: 1.5,
               ),
             ),
           ),
